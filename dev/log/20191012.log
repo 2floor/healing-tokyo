@@ -1,0 +1,2 @@
+date:2019/10/12 04:14:27,  ip:::1,  hostname:DESKTOP-GCRLD30,  requestUrl:/jis2/controller/admin/login_ct.php,  method:POST,  browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36,  遷移元:http://localhost/jis2/admin/login.php
+date:2019/10/12 04:14:27,  ip:::1,  hostname:DESKTOP-GCRLD30,  requestUrl:/jis2/admin/menu.php,  method:GET,  browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36,  遷移元:http://localhost/jis2/admin/login.php

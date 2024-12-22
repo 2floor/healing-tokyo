@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	z-index: 999;
+	transition: background-color .5s;
+}
+.headerAreaWrap{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 115px;
+}
+.headerLogoArea{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 280px;
+}
+.headerLogoAreaLink{
+	display: block;
+}
+.headerLogoAreaLink > img{
+	width: 100%;
+}
+.headerMenuArea{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-end;
+	flex-wrap: wrap;
+}
+.headerMenuTop{
+	flex-basis: 100%;
+}
+.headerMenuTopWrap{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-bottom: 10px;
+}
+.headerMenuTopBox{
+	margin-left: 20px;
+}
+.headerMenuTopLink{
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	color: #FFF;
+	cursor: pointer;
+	transition:color .5s;
+}
+.headerMenuBottom{
+	flex-basis: 100%;
+}
+.headerMenuBottomWrap{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.headerMenuBottomBox{
+	margin-left: 25px;
+}
+.headerMenuArea a:visited,
+.headerMenuArea a:link {
+	color: #FFF;
+}
+.headerMenuBottomLink{
+	font-size: 18px;
+	letter-spacing: 0.05em;
+	color: #FFF;
+	cursor: pointer;
+	transition:color .5s;
+}
+.scShow{
+	display: none;
+}
+header.sc .scShow{
+	display: block;
+}
+header.sc .scHide{
+	display: none;
+}
+
+header.sc{
+	background-color: #FFF;
+	transition: background-color .5s;
+}
+
+header.sc .headerMenuBottomLink, header.sc .headerMenuTopLink{
+	color: #222222;
+	transition: color .5s;
+}
+header.sc .headerHumb > span, header.sc .headerHumb > span:before, header.sc .headerHumb > span:after{
+	background-color: #222222;
+}
+.headerHumbArea{
+	display: none
+}
+
+.sc .back_pink{
+	display: inline-block;
+    padding: 10px 20px;
+    background: #ee0e5a;
+    border-radius: 4px;
+    
+    font-weight: bold;
+    box-shadow: 0px 3px 0px 0px rgba(212, 185, 185, 0.6);	
+}
+
+.sc .back_pink a{
+
+	color: #ffffff !important;
+}
+
+@media screen and (max-width: 991px) {
+	.headerAreaWrap{
+		height: 85px;
+	}
+	.headerLogoArea {
+	    width: 204px;
+	    padding-top:5px;
+	}
+	.headerHumbArea{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	.headerHumb{
+		width: 30px;
+		height: 30px;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		margin-right: 10px;
+	}
+	.headerHumb > span{
+		display: block;
+		width: 30px;
+		height: 3px;
+		position: relative;
+
+		background-color: #FFF;
+		transition: background-color .5s;
+	}
+	.headerHumb > span:before, .headerHumb > span:after{
+		content: "";
+		position: absolute;
+		left: 0;
+		display: block;
+		width: 30px;
+		height: 3px;
+		background-color: #FFF;
+
+
+		transform: rotate(0);
+		transition: transform .5s, top .5s;
+	}
+	.headerHumb > span:before{
+		top: -10px;
+	}
+	.headerHumb > span:after{
+		top: 10px;
+	}
+
+
+	#humb:checked ~ header{
+		background-color: #FFF;
+	}
+
+	#humb:checked ~ header .headerAreaWrap .headerHumbArea .headerHumb > span{
+		background-color: rgba(255,255,255,0);
+		transition: background-color .5s;
+	}
+	#humb:checked ~ header .headerAreaWrap .headerHumbArea .headerHumb > span:before{
+		top: 0;
+		transform: rotate(225deg);
+		background-color: #222222;
+		transition: transform .5s, top .5s, background-color .5s;
+	}
+	#humb:checked ~ header .headerAreaWrap .headerHumbArea .headerHumb > span:after{
+		top: 0;
+		transform: rotate(-225deg);
+		background-color: #222222;
+		transition: transform .5s, top .5s, background-color .5s;
+	}
+
+	.headerMenuArea{
+		position: fixed;
+		top: 50px;
+		left: 0;
+		width: 100%;
+		background-color: rgba(255,255,255,0);
+
+		transform: translateX(100vw);
+		transition: transform .5s, background-color .5s;
+	}
+	#humb:checked ~ header .headerAreaWrap .headerMenuArea{
+		transform: translateX(0);
+		background-color: #FFF;
+		transition: transform .5s, background-color .5s;
+	}
+	#humb:checked ~ header .headerAreaWrap .headerMenuTopLink,
+	#humb:checked ~ header .headerAreaWrap .headerMenuBottomLink{
+		color: #222222;
+	}
+	#humb:checked ~ header .headerAreaWrap .scShow, header.sc .scShow{
+		display: block;
+	}
+
+	#humb:checked ~ header .headerAreaWrap .scHide, header.sc .scHide{
+		display: none;
+	}
+	.headerMenuTopWrap, .headerMenuBottomWrap{
+		flex-wrap: wrap;
+	}
+	.headerMenuTop, .headerMenuBottom{
+		width: 100%;
+	}
+	.headerMenuTop{
+		order: 2;
+	}
+	.headerMenuBottom{
+		order: 1;
+	}
+	.headerMenuTopBox, .headerMenuBottomBox{
+		flex-basis: 100%;
+		margin-left: 0;
+		border-top:1px solid  #222222;
+	}
+	.headerMenuTopBox:last-child{
+		border-bottom:1px solid  #222222;
+	}
+	.headerMenuTopLink, .headerMenuBottomLink{
+		display: block;
+		padding: 15px 30px;
+		color: #222222;
+	}
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+}

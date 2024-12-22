@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+
+
+/* base property
+================================================== */
+.w103 { width: 103px; }
+.w120 { width: 120px; }
+.w138 { width: 138px; }
+
+.mLR10 { margin-left: 10px; margin-right: 10px; }
+
+.pTB10 { padding-top: 10px; padding-bottom: 10px; }
+
+.tryPremiumSide{
+	float: right;
+	width: 200px;
+	margin: 10px 0 0 0;
+}
+
+.tryPremiumMsg{
+	position: relative;
+}
+
+.tryPremiumMsg a{
+	position: absolute;
+	bottom: 20px;
+	left: 33px;
+}
+
+.tryPremiumKey {
+	position: absolute;
+	bottom: 0;
+	right: -27px;
+}
+
+.tryPremiumSideData {
+	padding: 2px 15px 2px 0;
+	border-left: 1px solid #c5b592;
+	border-right: 1px solid #c5b592;
+	background-color: #e2d8b8;
+	color: #67523a;
+	text-align: right;
+}
+.tryPremiumSideLst {
+	padding: 0 14px 15px 14px;
+	border-left: 1px solid #d5c9b7;
+	border-right: 1px solid #d5c9b7;
+	border-bottom: 1px solid #d5c9b7;
+	background-color: #f9f6ee;
+}
+.tryPremiumSideLstCont {
+	padding: 10px 0 10px 0;
+	border-bottom: #b7b7b7 1px dotted;
+}
+
+.icoRank1 {
+	width: 25px;
+	height: 25px;
+	background-position: 0 -340px;
+}
+.icoRank2 {
+	width: 25px;
+	height: 25px;
+	background-position: 0 -400px;
+}
+.icoRank3 {
+	width: 25px;
+	height: 25px;
+	background-position: 0 -460px;
+}
+.icoRank4 {
+	width: 25px;
+	height: 25px;
+	background-position: 0 -520px;
+}
+.icoRank5 {
+	width: 25px;
+	height: 25px;
+	background-position: 0 -580px;
+}
+.tryPremiumSideLstCont p {
+	padding: 0 0 0 30px;
+	line-height: 1.5;
+}
+.tryPremiumSideLstCont p span{
+	font-weight: bold;
+}
+.pr {
+	position: relative;
+}
+.pa {
+	position: absolute;
+}
+.sArB {
+	height: 14px;
+	padding-left: 8px;
+	background-position: 0 -695px;
+}
+.tryPremiumSideLstCont p.tryPreSidTxt{
+    padding: 0;
+}
+
+/*
+================================================== */
+
+/* Travel商品TOP右枠h3テキスト化 */
+.tryPremiumSide h3.ttlTravel{
+padding:11px 17px;
+background-color:#6f4830;
+font-weight: bold;
+color:#fff;
+border-top:solid 1px #775437;
+border-left:solid 1px #775437;
+border-right:solid 1px #775437;
+}
+
+/*  201601 ヘアカタログ右枠追加
+================================================== */
+.tryPremiumCatalog {
+border: solid 1px #e3d3af;
+margin-bottom: 10px;
+line-height: 1.4;
+}
+.tryPremiumCatalog a:hover {
+opacity:0.7;
+filter: alpha(opacity=70);
+-ms-filter: "alpha( opacity=70 )";
+}
+.tryPremiumCatalogHdStyle {
+background: #f2eee5;
+padding: 7px 5px ;
+}
+.tryPremiumCatalogListStd {
+margin:7px 10px;
+}
+.tryPremiumCatalogListKey {
+margin:7px 10px;
+}
+.tryPremiumCatalogListKey li {
+display: inline-block;
+margin: 0 4px 3px 0;
+border: solid 1px #e3d3af;
+border-radius: 3px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+}
+.tryPremiumCatalogListKey li a {
+display: block;
+padding: 3px;
+text-decoration: none;
+}
+.tryPremiumCatalogListStd li {
+margin: 0;
+}
+.tryPremiumCatalogListStd li a {
+display: inline-block;
+padding: 2px 0;
+text-decoration: none;
+}
+.clearSearch {
+float: right;
+margin: -26px 5px 0 0;
+padding: 0 3px 0 14px;
+border: solid 1px #e3d3af;
+border-radius: 3px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+line-height: 18px;
+font-size: 11px;
+}
+.clearSearch a {
+	text-decoration:none;
+}

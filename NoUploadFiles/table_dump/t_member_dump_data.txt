@@ -1,0 +1,64 @@
+member_id Nothing
+name Nothing
+mail Nothing
+password Nothing
+tel Nothing
+sex Nothing
+birthday Nothing
+nationality Nothing
+addr Nothing
+icon Nothing
+google_au Nothing
+facebook_au Nothing
+del_flg Nothing
+create_at Nothing
+update_at Nothing
+'member_id',
+'name',
+'mail',
+'password',
+'tel',
+'sex',
+'birthday',
+'nationality',
+'addr',
+'icon',
+'google_au',
+'facebook_au',
+'del_flg',
+'create_at',
+'update_at',
+
+
+$post['member_id'],
+$post['name'],
+$post['mail'],
+$post['password'],
+$post['tel'],
+$post['sex'],
+$post['birthday'],
+$post['nationality'],
+$post['addr'],
+$post['icon'],
+$post['google_au'],
+$post['facebook_au'],
+$post['del_flg'],
+$post['create_at'],
+$post['update_at'],
+
+'member_id' => $reult_detail['member_id'],
+'name' => $reult_detail['name'],
+'mail' => $reult_detail['mail'],
+'password' => $reult_detail['password'],
+'tel' => $reult_detail['tel'],
+'sex' => $reult_detail['sex'],
+'birthday' => $reult_detail['birthday'],
+'nationality' => $reult_detail['nationality'],
+'addr' => $reult_detail['addr'],
+'icon' => $reult_detail['icon'],
+'google_au' => $reult_detail['google_au'],
+'facebook_au' => $reult_detail['facebook_au'],
+'del_flg' => $reult_detail['del_flg'],
+'create_at' => $reult_detail['create_at'],
+'update_at' => $reult_detail['update_at'],
+

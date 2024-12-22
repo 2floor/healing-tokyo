@@ -1,0 +1,32 @@
+code_id Nothing
+code Nothing
+description1 Nothing
+description2 Nothing
+description3 Nothing
+create_at Nothing
+update_at Nothing
+'code_id',
+'code',
+'description1',
+'description2',
+'description3',
+'create_at',
+'update_at',
+
+
+$post['code_id'],
+$post['code'],
+$post['description1'],
+$post['description2'],
+$post['description3'],
+$post['create_at'],
+$post['update_at'],
+
+'code_id' => $reult_detail['code_id'],
+'code' => $reult_detail['code'],
+'description1' => $reult_detail['description1'],
+'description2' => $reult_detail['description2'],
+'description3' => $reult_detail['description3'],
+'create_at' => $reult_detail['create_at'],
+'update_at' => $reult_detail['update_at'],
+

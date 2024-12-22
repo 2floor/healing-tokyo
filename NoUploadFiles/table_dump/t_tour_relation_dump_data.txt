@@ -1,0 +1,52 @@
+tour_relation_id Nothing
+tour_id Nothing
+start_date Nothing
+end_date Nothing
+start_time Nothing
+end_time Nothing
+holiday_week Nothing
+max_number_of_people Nothing
+del_flg Nothing
+public_flg Nothing
+create_at Nothing
+update_at Nothing
+'tour_relation_id',
+'tour_id',
+'start_date',
+'end_date',
+'start_time',
+'end_time',
+'holiday_week',
+'max_number_of_people',
+'del_flg',
+'public_flg',
+'create_at',
+'update_at',
+
+
+$post['tour_relation_id'],
+$post['tour_id'],
+$post['start_date'],
+$post['end_date'],
+$post['start_time'],
+$post['end_time'],
+$post['holiday_week'],
+$post['max_number_of_people'],
+$post['del_flg'],
+$post['public_flg'],
+$post['create_at'],
+$post['update_at'],
+
+'tour_relation_id' => $reult_detail['tour_relation_id'],
+'tour_id' => $reult_detail['tour_id'],
+'start_date' => $reult_detail['start_date'],
+'end_date' => $reult_detail['end_date'],
+'start_time' => $reult_detail['start_time'],
+'end_time' => $reult_detail['end_time'],
+'holiday_week' => $reult_detail['holiday_week'],
+'max_number_of_people' => $reult_detail['max_number_of_people'],
+'del_flg' => $reult_detail['del_flg'],
+'public_flg' => $reult_detail['public_flg'],
+'create_at' => $reult_detail['create_at'],
+'update_at' => $reult_detail['update_at'],
+

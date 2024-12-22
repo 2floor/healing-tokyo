@@ -1,0 +1,136 @@
+reservation_id Nothing
+tour_relation_id Nothing
+tour_name Nothing
+men_num Nothing
+women_num Nothing
+children_num Nothing
+come_date Nothing
+end_date Nothing
+payment_way Nothing
+adult_fee Nothing
+children_fee Nothing
+total Nothing
+tax Nothing
+total_add_tax Nothing
+order_id Nothing
+session_id Nothing
+link_exp_datetime Nothing
+settlement_url Nothing
+settlement_flg Nothing
+vResultCode Nothing
+name Nothing
+name_kana Nothing
+age Nothing
+sex Nothing
+tel Nothing
+mail Nothing
+question_answer Nothing
+cancel_flg Nothing
+member_id Nothing
+store_basic_id Nothing
+del_flg Nothing
+create_at Nothing
+update_at Nothing
+'reservation_id',
+'tour_relation_id',
+'tour_name',
+'men_num',
+'women_num',
+'children_num',
+'come_date',
+'end_date',
+'payment_way',
+'adult_fee',
+'children_fee',
+'total',
+'tax',
+'total_add_tax',
+'order_id',
+'session_id',
+'link_exp_datetime',
+'settlement_url',
+'settlement_flg',
+'vResultCode',
+'name',
+'name_kana',
+'age',
+'sex',
+'tel',
+'mail',
+'question_answer',
+'cancel_flg',
+'member_id',
+'store_basic_id',
+'del_flg',
+'create_at',
+'update_at',
+
+
+$post['reservation_id'],
+$post['tour_relation_id'],
+$post['tour_name'],
+$post['men_num'],
+$post['women_num'],
+$post['children_num'],
+$post['come_date'],
+$post['end_date'],
+$post['payment_way'],
+$post['adult_fee'],
+$post['children_fee'],
+$post['total'],
+$post['tax'],
+$post['total_add_tax'],
+$post['order_id'],
+$post['session_id'],
+$post['link_exp_datetime'],
+$post['settlement_url'],
+$post['settlement_flg'],
+$post['vResultCode'],
+$post['name'],
+$post['name_kana'],
+$post['age'],
+$post['sex'],
+$post['tel'],
+$post['mail'],
+$post['question_answer'],
+$post['cancel_flg'],
+$post['member_id'],
+$post['store_basic_id'],
+$post['del_flg'],
+$post['create_at'],
+$post['update_at'],
+
+'reservation_id' => $reult_detail['reservation_id'],
+'tour_relation_id' => $reult_detail['tour_relation_id'],
+'tour_name' => $reult_detail['tour_name'],
+'men_num' => $reult_detail['men_num'],
+'women_num' => $reult_detail['women_num'],
+'children_num' => $reult_detail['children_num'],
+'come_date' => $reult_detail['come_date'],
+'end_date' => $reult_detail['end_date'],
+'payment_way' => $reult_detail['payment_way'],
+'adult_fee' => $reult_detail['adult_fee'],
+'children_fee' => $reult_detail['children_fee'],
+'total' => $reult_detail['total'],
+'tax' => $reult_detail['tax'],
+'total_add_tax' => $reult_detail['total_add_tax'],
+'order_id' => $reult_detail['order_id'],
+'session_id' => $reult_detail['session_id'],
+'link_exp_datetime' => $reult_detail['link_exp_datetime'],
+'settlement_url' => $reult_detail['settlement_url'],
+'settlement_flg' => $reult_detail['settlement_flg'],
+'vResultCode' => $reult_detail['vResultCode'],
+'name' => $reult_detail['name'],
+'name_kana' => $reult_detail['name_kana'],
+'age' => $reult_detail['age'],
+'sex' => $reult_detail['sex'],
+'tel' => $reult_detail['tel'],
+'mail' => $reult_detail['mail'],
+'question_answer' => $reult_detail['question_answer'],
+'cancel_flg' => $reult_detail['cancel_flg'],
+'member_id' => $reult_detail['member_id'],
+'store_basic_id' => $reult_detail['store_basic_id'],
+'del_flg' => $reult_detail['del_flg'],
+'create_at' => $reult_detail['create_at'],
+'update_at' => $reult_detail['update_at'],
+

@@ -1,0 +1,1014 @@
+@charset "UTF-8";
+.searchAreaWrap{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin: 30px 25px;
+}
+.searchAreaBox{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	margin-right: 20px
+}
+.searchAreaBox.noMa{
+	margin-right: 0
+}
+.searchAreaBox{
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+
+}
+.searchAreaBoxLabel{
+	margin-bottom: 0;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	font-size: 16px;
+	color: #313131;
+	margin-left: 5px;
+	padding-bottom: 10px;
+	
+}
+.searchAreaBoxSelect{
+	width: 320px;
+	height: 50px;
+	padding: 0 15px;
+}
+.searchAreaBoxSelect.w2{
+	width: 245px;
+}
+.searchAreaBoxSelect.w3{
+	width: 200px;
+}
+.searchSubmitBtn{
+	background-color: #ffae00;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+	appearance: none;
+	height: 50px;
+	width: 50px;
+	font-size: 32px;
+	color: #FFF;
+	border-radius: 5px;
+}
+
+.reverseFuji{
+	position: relative;
+}
+.reverseFuji:after{
+	content:"";
+	display: block;
+	position: absolute;
+	bottom: -500px;
+	background-image: url(../../img/reverce_fuji.png);
+	width: 100%;
+	height: 500px;
+}
+.cmsi__head .cmp__head__title.jisTtlArea{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-family: "ヒラギノ角ゴ ProN W3",  "Hiragino Kaku Gothic ProN", メイリオ, Meiryo,  "Noto Sans Japanese", sans-serif;
+	font-weight: bold;
+}
+.jisTtlArea > img{
+	margin-right: 10px;
+}
+
+.btnBg1 {
+    background: #ee0e5a;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+	.searchAreaBoxSelect{
+		width: 120px;
+		height: 30px;
+		padding: 0 15px;
+	}
+	.searchAreaBoxSelect.w2{
+		width: 100px;
+	}
+	.searchAreaBoxSelect.w3{
+		width: 110px;
+	}
+	.searchAreaBoxLabel{
+		font-size: 18px;
+	}
+
+
+}
+
+.storeEditCate{
+	border-left:solid 5px #ee0e5a;
+	background:#e2dad8;
+	font-size:14px;
+	color:#ee0e5a;
+	padding:15px 0 10px 10px;
+	display:table-cell;
+	width:155px;
+    }
+
+.searchResultBox2{
+	background:#fff;
+	padding:20px 20px;
+	position: relative;
+	box-sizing:border-box;
+	border:1px solid #0e1243;
+	margin-bottom:10px;
+}
+
+.shopNav li a {
+    display: block;
+    height: 48px;
+    background: #ee0e5a;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    zoom: 1;
+    padding: 0;
+}
+.shopNav li {
+    display: table-cell;
+    background-color: #004ea2;
+    border-right: 1px solid #424881;
+    border-left: 1px solid #d3d4eb;
+    vertical-align: middle;
+    color: #fff;
+    width: 163px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+
+.btnBg2 {
+    background: #ee0e5a;
+    color: #fff;
+    box-shadow: 0px 2px 0px 0px rgba(11,15,64,0.6);
+    height: 42px;
+    line-height: 42px;
+}
+
+
+.required_form {
+    position: relative;
+}
+.required_form:after {
+    content: "※";
+    position: absolute;
+    right: 50px;
+    top: -10px;
+    font-size: 1.3em;
+    color: red;
+    bottom: 0;
+    margin: auto;
+    height: 20px;
+
+}
+.customerNumFieldArea{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.customerNumField{
+	flex-basis: 30%;
+}
+
+.mypageStoreInfoEditBtnBox {
+    width: auto;
+}
+.mypageStoreInfoEditBtn1 {
+    background: #ee0e5a;
+    color: #fff;
+    border: 1px solid #ee0e5a;
+}
+.mypageStoreInfoEditBtn1 a:link, .mypageStoreInfoEditBtn1 a:visited{
+    color: #fff;
+}
+.mypageStoreInfoEditBtn1:hover a:link, .mypageStoreInfoEditBtn1:hover a:visited{
+    color: #ee0e5a;
+}
+.newsDetailArea{
+	margin-left: 40px;
+}
+.newsDetailTtl{
+	font-weight: bold;
+	font-size: 1.1em;
+	line-height: 1.3;
+	display: inline-block;
+	margin-bottom: 10px
+}
+.newsDetail{
+	line-height: 1.3;
+}
+.reviewWrap{
+	margin-left: 40px;
+}
+.reviewArea{
+	margin-bottom: 20px;
+}
+.reviewAreaTtl{
+	margin-bottom: 10px;
+}
+.reviewStar{
+	margin-bottom: 10px;
+}
+.reviewStrLink{
+	margin-top: 30px;
+    text-align: right;
+}
+.tourReservationDetail{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.tourReservationDetailTtl{
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.tourReservationBtn{
+	text-align: left;
+}
+.tourReservationList{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 30px;;
+}
+.tourReservationListBtnArea a{
+	display: block;
+}
+.btnBase.tourReservationListBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    vertical-align: middle;
+    line-height: 32px;
+    margin-bottom: 10px!important;
+}
+.tourReservationListBtn.cl2{
+	background-color: rgba(255,255,255,0);
+	color: #ee0e5a;
+	border-color: #ee0e5a;
+}
+.detailStarArea{
+	color: #e8d11d;
+}
+.planDetailClose {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: left;
+}
+.planCalDate {
+    height: 50px;
+}
+.planCalBox1 .planDetailClose{
+	text-align: center;
+	margin-left: 0
+}
+.planDetailBoxLeft >  img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+
+}
+.formBoxSmall{
+	margin-top: -15px;
+    font-size: 0.8em;
+}
+.planCalNPBoxN:not(:first-child){
+	margin-top: 30px;
+}
+.storeEditBtnBoxCap{
+	margin-bottom: 20px;;
+}
+.social-media > ul{
+	display: flex;
+	margin-bottom: 10px;
+	justify-content: flex-start;
+}
+.social-media > ul li{
+	margin-right: 20px;
+}
+
+.smallBtn{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 0 0 auto;
+	apiarance:none;
+	border: 1px solid #ee0e5a;
+    height: 52px;
+    padding: 0 20px;
+    margin-right: 20px;
+	background-color: #FFF;
+	color: #ee0e5a;
+	border-radius: 5px;
+	transition: .3;
+	cursor: pointer;
+}
+.ov.active {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	-ms-filter: "alpha(opacity=80)";
+	-moz-opacity:0.8;
+	zoom: 1;
+	vertical-align: bottom;
+}
+.smallBtn:hover{
+	background-color: #FFF;
+	color: #ee0e5a;
+	border-radius: 5px;
+	transition: .3s;
+}
+
+
+.col2TableBoxArea{
+	margin-top: 15px;
+	margin-bottom: 70px
+}
+
+.col2TableBoxRow{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 15px 0;
+	color: #757575;
+}
+.col2TableBoxHead{
+	flex-basis: 220px;
+}
+.col2TableBoxHead *{
+	font-size: 14px;
+	line-height: 24px;
+}
+.col2TableBoxBody{
+	flex-basis: calc(100% - 220px);
+}
+.col2TableBoxBody *{
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.mypageListBoxJ{
+	    padding: 20px 30px;
+	background-color: #ededed;
+	margin-bottom: 20px;;
+}
+.mypageListBoxJCont{
+	display: flex;
+	justify-content: flex-start;
+	align-content: flex-start;
+}
+.mypageListBoxJCapArea{
+	text-align: center;
+	margin-right: 20px;
+}
+.mypageListBoxCap{
+	font-size: 14px;
+	line-height: 1.73;
+	margin-bottom: 10px;
+}
+.mypageListBoxJImgArea{
+	margin-right: 20px;
+
+}
+.mypageListBoxImg{
+		width: 120px;
+}
+.mypageListBoxJTtlArea{
+
+}
+.mypageListBoxJTtl{
+
+}
+.mypageListBoxJBtnArea{
+}
+.mt-n.mypageListBoxJBtnArea{
+	margin-top: -20px ;
+}
+.mypageListBoxJBtn{
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    margin-right: 0;
+    margin-left: auto;
+    margin-bottom: 0!important;
+}
+.mypageListBoxJBtn .btnLh2{
+	line-height: 1;
+}
+
+
+.rankingBoxWrap{
+	margin-bottom: 30px;
+}
+
+.rankingBox{
+	margin-top: 30px;
+	padding: 30px 20px;
+	border: 1px solid #333;
+}
+.rankingBoxIn{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.rankingBoxInImgBox{
+	flex-basis: 28%;
+}
+.rankingBoxInImg{
+	width: 100%;
+}
+.rankingBoxInTxtBox{
+	flex-basis: 70%;
+}
+.rankingBoxInTxtBoxTtlArea{
+	margin-bottom: 10px;
+
+}
+.rankingBoxInTxtBoxTtl{
+    font-size: 26px;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+}
+.rankingBoxInTxtBoxSubTtlArea{
+	position: relative;
+	margin-bottom: 10px;
+	padding-left: 20px
+}
+.rankingBoxInTxtBoxSubTtlArea:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 3px;
+	height: 100%;
+	background-color: #b28850
+}
+.rankingBoxInTxtBoxSubTtl{
+	font-size: 20px;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+}
+.rankingBoxInTxtBoxTxtArea{
+	margin-bottom: 10px;
+
+}
+.rankingBoxInTxtBoxTxt{
+    letter-spacing: 0.2em;
+    line-height: 1.7
+}
+.rankingBoxInTxtBoxBtnArea{
+	text-align: right;
+}
+
+.bgGselectionM {
+    width: 100%;
+    background-size: 100%;
+}
+.bgGselectionB {
+    width: 100%;
+}
+.GselectionL, .GselectionR {
+    width: 50%;
+}
+.formTxt1.numberSelect{
+	display: inline-block;
+	width: auto;
+}
+.radioStyle{
+	position: relative;
+}
+.radioStyle > input{
+	display: none;
+}
+.radioStyle > input + span{
+	position: relative;
+	padding-left: 20px;
+}
+.radioStyle > input + span:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 3px;
+	display: block;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #a0a0a0;
+	border-radius: 50%;
+}
+.radioStyle > input + span:after{
+    content: "";
+    position: absolute;
+       left: 3px;
+    top: 6px;
+    display: block;
+    width: 9px;
+    height: 9px;
+    background-color: #ee0e5a;
+    border-radius: 50%;
+    opacity: 0;
+	transition: .2s;
+}
+
+.radioStyle > input:checked + span:after{
+	opacity: 1;
+	transition: .2s;
+}
+
+.noteTextArea{
+    margin: 0 6px 21px;
+    padding: 5px 15px;
+}
+.agreementCheckBoxArea{
+	margin: 50px 0;
+}
+
+.agreementCheckBoxArea > label{
+	color: red;
+}
+
+
+
+.checkboxStyle{
+	position: relative;
+}
+.checkboxStyle > input{
+	display: none;
+}
+.checkboxStyle > input + span{
+	position: relative;
+	padding-left: 20px;
+}
+.checkboxStyle > input + span:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 3px;
+	display: block;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #a0a0a0;
+	border-radius: 3px;
+}
+.checkboxStyle > input + span:after{
+    content: "";
+    position: absolute;
+   left: 3px;
+    top: 4px;
+    display: block;
+    width: 15px;
+    height: 7px;
+    border-left: 3px solid #ee0e5a;
+    border-bottom: 3px solid #ee0e5a;
+    transform: rotate(-45deg);
+    opacity: 0;
+	transition: .2s;
+}
+
+.checkboxStyle > input:checked + span:after{
+	opacity: 1;
+	transition: .2s;
+}
+
+.reserveMainImage1Area{
+	display: flex;
+	justify-content: flex-start;
+    margin: 0 6px 0 6px;
+}
+
+.reserveMainImage1AreaTxtBox{
+	display: flex;
+	align-items: flex-end;
+	padding: 30px 20px;
+		flex-basis: 30%;
+	line-height: 1.4;
+	font-size: 22px;
+	background-color: #ee0e5a;
+	font-weight: bold;
+	color:#FFF;
+}
+
+.reserveMainImage1AreaImgBox{
+	flex-basis: 70%;
+}
+
+.reserveMainImage1AreaImgBox > img{
+	width: 100%;
+}
+
+
+.authLoginImgBox{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.authLoginImg{
+	margin: 0 20px;
+}
+
+.authLoginImg > img{
+	height: 40px;
+}
+
+
+.required_form.pos2:after {
+    right: 0;
+}
+
+
+.btnArea{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.btn{
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+	appearance: none;
+    transition: background-color .3s, color .3s;
+
+    padding: 15px 20px;
+    min-width: 200px;
+    text-align: center;
+    border-radius: 5px;
+	box-shadow: none;
+	font-size: 14px;
+}
+
+.btnBg1 {
+    background-color: #ee0e5a;
+    border: 1px solid #ee0e5a;
+    color: #fff;
+}
+
+.btnBg1:hover {
+	background-color: #FFF;
+    color: #ee0e5a;
+    border: 1px solid #ee0e5a;
+    box-shadow: 0px 2px 0px 0px rgba(39,25,0,0.6);
+    transition: background-color .3s, color .3s, box-shadow .3s;
+}
+
+.btnBg1_wh:hover {
+    background-color: #ee0e5a;
+    border: 1px solid #ee0e5a;
+    color: #fff;
+}
+
+.btnBg1_wh {
+	background-color: #FFF;
+    color: #ee0e5a;
+    border: 1px solid #ee0e5a;
+    box-shadow: 0px 2px 0px 0px rgba(39,25,0,0.6);
+    transition: background-color .3s, color .3s, box-shadow .3s;
+}
+
+
+.btnBgBack {
+    background-color: #a4a4a4;
+    border: 1px solid #a4a4a4;
+    color: #fff;
+}
+
+.btnBgBack:hover {
+	background-color: #FFF;
+    color: #a4a4a4;
+    box-shadow: 0px 2px 0px 0px rgba(39,25,0,0.6);
+    transition: background-color .3s, color .3s, box-shadow .3s;
+}
+
+
+.conf_show{
+	display: none;
+}
+
+[disabled="disabled"]{
+	border: none!important;
+	background-color: transparent!important;
+
+}
+
+.fileCheckBox{
+	    flex-basis: calc(33% - 10px);
+	    padding: 10px;
+    background-color: #ddd;
+}
+.fileCheckImg{
+	height: 150px;
+}
+
+.fileCheckImg > img{
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+.file_name_area{
+	font-size: 12px;
+}
+
+.imgPrevBox{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.imgPrevBox > div{
+	margin-right: 10px;
+}
+
+.exceptionDateArea{
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+	margin-bottom: 10px;
+}
+.exceptionDateArea:last-of-type{
+	margin-bottom: 30px;
+}
+
+.exceptionDateArea > input{
+	flex-basis: 25%;
+	margin-right: 10px;
+}
+.exceptionDateArea > button{
+	flex-basis: 37px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.recentBox{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 10px;
+	border: 1px solid #777;
+	margin-bottom: 10px;
+}
+
+.recentBoxImg {
+	flex-basis: 120px;
+	margin-right: 10px;
+}
+.recentBoxAr{
+	flex-basis: calc(100% - 130px);
+}
+
+
+.cid-qIjES4e5vV .card .card-wrapper .card-img > img{
+	height: 170px;
+	object-fit: cover;
+	font-family: "object-fit: cover;";
+}
+
+.slick-slide .card-img > img{
+	height:43vw;
+	margin-bottom: 10px;
+	object-fit: cover;
+	font-family: "object-fit: cover;";
+	padding: 0 5px;
+}
+.calTopTable {
+	margin: auto;
+}
+
+.slideFrame{
+	height: 300px!important;
+}
+
+.slideFrame .slideCell img{
+	height: 300px;
+	width: 200px;
+	object-fit: contain;
+	font-family: "object-fit: contain";
+	backface-visibility:hidden;
+}
+
+@media screen and (max-width: 991px) {
+	.authLoginImgBox{
+		display: block;
+	}
+	.searchAreaBoxSelect{
+		width: 120px;
+		height: 30px;
+		padding: 0 15px;
+	}
+	.searchAreaBoxSelect.w2{
+		width: 100px;
+	}
+	.searchAreaBoxSelect.w3{
+		width: 110px;
+	}
+	.headerMenuTopLink{
+	    font-size: 14px;
+	}
+	.headerMenuBottomLink {
+	    font-size: 16px;
+	}
+	.cid-qIjES4e5vV .card .card-wrapper > div.card-box {
+		padding: 10px;
+		text-align: left;
+	}
+	.cid-qIjES4e5vV .card .card-wrapper > div.card-box .mbr-card-text{
+		text-align: left;
+	}
+
+	.searchAreaBoxWrap{
+		margin: 0 20px;
+	}
+	.searchAreaWrap {
+	    flex-wrap: wrap;
+	}
+	.searchAreaBox{
+		flex-basis: 100%;
+		margin-bottom: 10px;
+	}
+	.searchAreaBox.noMa{
+		margin-right: 20px;
+	}
+	.searchAreaBoxSelect, .searchAreaBoxSelect.w2, .searchAreaBoxSelect.w3{
+		width: 100%;
+		margin: 0;
+	}
+	.searchSubmitBtn{
+		width: 100%;
+	}
+
+
+	.col2TableBoxArea{
+		margin-top: 15px;
+		margin-bottom: 70px;
+		margin: 15px 15px 30px 15px;
+	}
+
+	.col2TableBoxRow{
+		flex-wrap: wrap;
+		padding: 0;
+	}
+	.col2TableBoxHead, .col2TableBoxBody{
+		padding: 5px 20px;
+		flex-basis: 100%;
+	}
+	.col2TableBoxHead{
+		background-color: #dedfea;
+	}
+	.col2TableBoxBody{
+		padding: 10px 20px;
+	}
+	.col2TableBoxBody *{
+	}
+
+
+	.mypageListBoxJ{
+		    padding: 10px 10px;
+		background-color: #ededed;
+		margin-bottom: 20px;;
+	}
+	.mypageListBoxJCont{
+		flex-wrap: wrap;
+	}
+	.mypageListBoxJCapArea{
+		order: 3;
+		flex-basis: 60%;
+		margin-left: 40%;
+		text-align: left;
+		margin-top: -15px;
+	}
+	.mypageListBoxCap{
+		margin-bottom: 0;
+		line-height: 1.33;
+	}
+	.mypageListBoxJImgArea{
+		flex-basis: calc( 40% - 20px );
+		order: 1;
+	}
+	.mypageListBoxImg{
+		width: 100%;
+	}
+	.mypageListBoxJTtlArea{
+		order: 1;
+		flex-basis: 60%;
+	}
+	.mypageListBoxJTtl{
+
+	}
+	.mypageListBoxJBtnArea{
+	}
+	.mt-n.mypageListBoxJBtnArea{
+		margin-top: 10px ;
+		word-break: break-all;
+	}
+	.mypageListBoxJBtn{
+	    height: 52px;
+	}
+	.mypageListBoxJBtn .btnLh2{
+		line-height: 1;
+	}
+
+
+	.rankingBoxIn{
+		 flex-wrap: wrap;
+	}
+
+	.rankingBoxInImgBox,
+	.rankingBoxInTxtBox{
+		flex-basis: 100%;
+		word-break: break-all;
+	}
+
+	.rankingBoxInImgBox{
+		margin-bottom: 20px
+	}
+	.rankingBoxInTxtBoxTtl{
+	    font-size: 22px;
+	    letter-spacing: 0.2em;
+	    font-weight: bold;
+	}
+	.rankingBoxInTxtBoxSubTtl{
+		font-size: 16px;
+	    letter-spacing: 0.2em;
+	    font-weight: bold;
+	}
+
+
+	.reserveMainImage1Area{
+		flex-wrap: wrap;
+		margin-bottom: 30px;;
+	}
+
+	.reserveMainImage1AreaTxtBox,
+	.reserveMainImage1AreaImgBox{
+		flex-basis: 100%;
+	}
+
+	.reserveMainImage1AreaTxtBox{
+		padding: 20px;
+		order: 2;
+	}
+	.reserveMainImage1AreaImgBox{
+		order: 1;
+	}
+
+
+	.reserveMainImage1AreaImgBox > img{
+		width: 100%;
+	}
+	.rsvTop.sliderBorBtm{
+	border: none;
+	}
+	.storeEditCate{
+	    padding: 15px 10px 10px 10px;
+	}
+
+
+	.btnArea{
+		flex-wrap: wrap;
+	}
+	.btnArea .btn{
+		flex-basis: 100%;
+		margin-bottom: 10px;
+	}
+
+	.searchAreaBoxWrap {
+		width: 100%;
+		max-width: none;
+	}
+
+	.forSnsIcon{
+		margin-top: 20px;
+	}
+
+	.forSnsIcon > ul> li{
+		display: flex;
+		justify-content: center;
+			margin-right: 20px;
+	}
+
+
+}
+
+.storeEditForm{position: relative;}
+.storeEditForm span.error { position: absolute; bottom: -13px; left: 10px; font-size: 13px;}

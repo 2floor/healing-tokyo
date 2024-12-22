@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+<meta charset="utf-8">
+<title>Travel Healing Tokyo</title>
+<meta name="description" content="">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/top.css">
+<link rel="stylesheet" href="css/block.css">
+<link rel="canonical" href="https://www.jis.com/">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+<script src="https://static.travel.co.jp/js/data_int_min.js?201809052100" defer></script>
+<script src="https://static.travel.co.jp/js/stay/hotel.js?201812062100" defer onload="$(function() {
+    initializeDHotel();
+    initializeIHotel();
+})"></script><script src="https://static.travel.co.jp/js/ecl.js?201802201700" defer></script>
+<meta property="og:title" content="Travel Healing Tokyo">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.jis.com/">
+<meta property="og:image" content="img/ico_fb_200_200.png">
+<meta property="og:site_name" content="Travel Healing Tokyo">
+</head>
+<body class="pc-display">
+<header id="header_area">
+<div class="txtline"><h1>Travel Healing Tokyo</h1></div>
+<div class="header_direct"></div>
+</header>
+
+<!-- #container -->
+<div id="container" class="container-wide">
+
+<div class="top_content">
+
+
+
+<div class="main-visual">
+	<div class="hero" id="hero">
+
+		<div class="hero_blur" style="background-image: url(https://static.travel.co.jp/images/top/monthly/img_top_06_01.jpg);"></div>
+		<figure class="hero_figure content_wrapper">
+			<img class="hero_image" src="https://static.travel.co.jp/images/top/monthly/img_top_06_01.jpg" alt="京都は青もみじの季節がおすすめ！新緑の南禅寺天授庵は穴場スポット">
+		</figure>
+		<div class="hero_content content_wrapper">
+			<h2 class="hero_title">探そう！希望の旅を最安値で</h2>
+			<p class="hero_strapline">くらべる・えらべる・LINEトラベルjp</p>
+			<div class="search_wrapper">
+			</div>
+			<p class="text_align--right">
+				<span class="hero_article_label">今月の旅の風景</span>
+				<a class="hero_article_link" href="https://www.travel.co.jp/guide/article/18231/">
+					<span>京都は青もみじの季節がおすすめ！新緑の南禅寺天授庵は穴場スポット</span>
+					<img class="hero_article_img lazy" src="https://static.travel.co.jp/images/common/img_dummy.gif" data-src="https://static.travel.co.jp/images/top/monthly/tmb_monthly_06_01.jpg" alt="京都は青もみじの季節がおすすめ！新緑の南禅寺天授庵は穴場スポット"/>
+				</a>
+			</p>
+		</div>
+	</div>
+	<section class="search">
+		<div class="search_tab clr">
+			<label class="search_tab_label">
+				<input class="search_tab_input" type="radio" name="search_tab" value="hotel">
+				<p class="search_tab_txt">国内ホテル</p>
+			</label>
+			<label class="search_tab_label">
+				<input class="search_tab_input" type="radio" name="search_tab" value="tour" checked>
+				<p class="search_tab_txt">国内ツアー</p>
+			</label>
+			<label class="search_tab_label">
+				<input class="search_tab_input" type="radio" name="search_tab" value="air">
+				<p class="search_tab_txt">国内航空券</p>
+			</label>
+			<label class="search_tab_label">
+				<input class="search_tab_input" type="radio" name="search_tab" value="inthotel">
+				<p class="search_tab_txt">海外ホテル</p>
+			</label>
+			<label class="search_tab_label">
+				<input class="search_tab_input" type="radio" name="search_tab" value="inttour">
+				<p class="search_tab_txt">海外ツアー</p>
+			</label>
+			<label class="search_tab_label">
+				<input class="search_tab_input" type="radio" name="search_tab" value="intair">
+				<p class="search_tab_txt">海外航空券</p>
+			</label>
+		</div>
+		<div class="search_body">
+			<div class="search_panel search_panel--hotel clr" id="search-hotel">
+				<form id="search_form" action="/stay/search_result/" method="GET">
+					<input value="89" name="target_countries[]" type="hidden" class="target_countries">
+					<input value="airport" type="hidden" id="空港・駅">
+					<input value="hotel" type="hidden" id="ホテル">
+					<input value="spot" type="hidden" id="スポット">
+					<input value="city" type="hidden" id="都市">
+					<input value="country" type="hidden" id="国">
+					<div class="search_item search_item--word ui-text ico-top-before">
+						<input class="ui-text_input" id="search_destination" type="text" name="destination" placeholder="エリアまたはホテル名を入力">
+						<a class="ui-delete" href="#" data-id="hotel"></a>
+					</div>
+					<div class="search_item search_item--date ico-top-before">
+						<input id="datepicker-dh" type="hidden" value="">
+						<input id="search_checkin" type="hidden" name="checkin">
+						<input id="search_checkout" type="hidden" name="checkout">
+					</div>
+					<div class="search_item search_item--option ui-select">
+						<a class="ui-select_trigger ui-picker" href="#" data-disp="hotel">&nbsp;</a>
+						<input type="hidden" name="heads" value="2">
+						<input type="hidden" name="rooms" value="1">
+					</div>
+					<input type="hidden" name="no_date" value="">
+					<button class="search_submit" type="submit" onclick="return searchDHotel()">検 索</button>
+				</form>
+			</div>
+			<div class="search_panel search_panel--tour clr" id="search-tour">
+				<form id="form-domTour" action="/db2/user/search_tour.asp" onsubmit="return searchDT()">
+					<div class="search_item search_item--dep ui-select">
+						<p class="ui-select_disp">出発地：<span class="ui-select_disp_txt">&nbsp;</span></p>
+						<select class="ui-select_select" name="DEPPREF">
+							<option value="">指定なし</option>
+							<optgroup label="北海道">
+							<option value="HOKKAIDO">北海道</option>
+							</optgroup>
+							<optgroup label="東北">
+							<option value="2">青森県</option>
+							<option value="3">岩手県</option>
+							<option value="4">秋田県</option>
+							<option value="5">宮城県</option>
+							<option value="6">山形県</option>
+							<option value="7">福島県</option>
+							</optgroup>
+							<optgroup label="関東">
+							<option value="8">栃木県</option>
+							<option value="9">茨城県</option>
+							<option value="10">群馬県</option>
+							<option value="11">埼玉県</option>
+							<option value="12">千葉県</option>
+							<option value="13" selected>東京都</option>
+							<option value="14">神奈川県</option>
+							<option value="15">山梨県</option>
+							</optgroup>
+							<optgroup label="信越">
+							<option value="16">長野県</option>
+							<option value="17">新潟県</option>
+							</optgroup>
+							<optgroup label="北陸">
+							<option value="21">富山県</option>
+							<option value="22">石川県</option>
+							<option value="23">福井県</option>
+							</optgroup>
+							<optgroup label="東海">
+							<option value="18">静岡県</option>
+							<option value="19">愛知県</option>
+							<option value="20">三重県</option>
+							<option value="24">岐阜県</option>
+							</optgroup>
+							<optgroup label="近畿">
+							<option value="25">滋賀県</option>
+							<option value="26">京都府</option>
+							<option value="27">大阪府</option>
+							<option value="28">奈良県</option>
+							<option value="29">和歌山県</option>
+							<option value="30">兵庫県</option>
+							</optgroup>
+							<optgroup label="中国">
+							<option value="31">岡山県</option>
+							<option value="32">鳥取県</option>
+							<option value="33">広島県</option>
+							<option value="34">島根県</option>
+							<option value="35">山口県</option>
+							</optgroup>
+							<optgroup label="四国">
+							<option value="36">香川県</option>
+							<option value="37">徳島県</option>
+							<option value="38">愛媛県</option>
+							<option value="39">高知県</option>
+							</optgroup>
+							<optgroup label="九州">
+							<option value="40">福岡県</option>
+							<option value="41">佐賀県</option>
+							<option value="42">長崎県</option>
+							<option value="43">大分県</option>
+							<option value="44">熊本県</option>
+							<option value="45">宮崎県</option>
+							<option value="46">鹿児島県</option>
+							</optgroup>
+							<optgroup label="沖縄">
+							<option value="OKINAWA">沖縄県</option>
+							</optgroup>
+						</select>
+					</div>
+					<div class="search_item search_item--dest ui-select">
+						<p class="ui-select_disp">目的地：<span class="ui-select_disp_txt">&nbsp;</span></p>
+						<select class="ui-select_select" name="DIST">
+							<option value="">指定なし</option>
+							<option value="HOKKAIDO">■北海道</option>
+							<option value="TOHOKU">■東北</option>
+							<option value="2">－青森県</option>
+							<option value="3">－岩手県</option>
+							<option value="4">－秋田県</option>
+							<option value="5">－宮城県</option>
+							<option value="6">－山形県</option>
+							<option value="7">－福島県</option>
+							<option value="KANTO">■関東</option>
+							<option value="8">－栃木県</option>
+							<option value="9">－茨城県</option>
+							<option value="10">－群馬県</option>
+							<option value="11">－埼玉県</option>
+							<option value="12">－千葉県</option>
+							<option value="13">－東京都</option>
+							<option value="14">－神奈川県</option>
+							<option value="15">－山梨県</option>
+							<option value="SHINETSU">■信越</option>
+							<option value="16">－長野県</option>
+							<option value="17">－新潟県</option>
+							<option value="HOKURIKU">■北陸</option>
+							<option value="21">－富山県</option>
+							<option value="22">－石川県</option>
+							<option value="23">－福井県</option>
+							<option value="TOKAI">■東海</option>
+							<option value="18">－静岡県</option>
+							<option value="19">－愛知県</option>
+							<option value="20">－三重県</option>
+							<option value="24">－岐阜県</option>
+							<option value="KINKI">■近畿</option>
+							<option value="25">－滋賀県</option>
+							<option value="26">－京都府</option>
+							<option value="27">－大阪府</option>
+							<option value="28">－奈良県</option>
+							<option value="29">－和歌山県</option>
+							<option value="30">－兵庫県</option>
+							<option value="CHUGOKU">■中国</option>
+							<option value="31">－岡山県</option>
+							<option value="32">－鳥取県</option>
+							<option value="33">－広島県</option>
+							<option value="34">－島根県</option>
+							<option value="35">－山口県</option>
+							<option value="SHIKOKU">■四国</option>
+							<option value="36">－香川県</option>
+							<option value="37">－徳島県</option>
+							<option value="38">－愛媛県</option>
+							<option value="39">－高知県</option>
+							<option value="KYUSYU">■九州</option>
+							<option value="40">－福岡県</option>
+							<option value="41">－佐賀県</option>
+							<option value="42">－長崎県</option>
+							<option value="43">－大分県</option>
+							<option value="44">－熊本県</option>
+							<option value="45">－宮崎県</option>
+							<option value="46">－鹿児島県</option>
+							<option value="OKINAWA">■沖縄</option>
+						</select>
+					</div>
+					<div class="search_item search_item--date ico-top-before">
+						<input id="datepicker-dt" type="hidden" value="">
+						<input type="hidden" name="YYYYMMDD">
+					</div>
+					<div class="search_item search_item--option ui-select">
+						<a class="ui-select_trigger ui-picker" href="#" data-disp="tour" data-ctg="domtour">&nbsp;</a>
+						<input type="hidden" name="TERM1">
+						<input type="hidden" name="TERM2">
+						<input type="hidden" name="SYTERM" value="999">
+						<input type="hidden" name="STAY">
+						<input type="hidden" name="STAYOPT" value="1">
+					</div>
+					<button class="search_submit" type="submit">検 索</button>
+				</form>
+			</div>
+			<div class="search_panel search_panel--air clr" id="search-air">
+				<form id="form-domAir" action="/db2/user/search_air.asp" onSubmit="return searchDA()">
+					<div class="search_item search_item--dep ui-select">
+						<p class="ui-select_disp">出発地：<span class="ui-select_disp_txt">&nbsp;</span></p>
+						<select class="ui-select_select" name="DEP">
+							<optgroup label="国内主要空港" class="title_option">
+<option value="HND">東京／羽田</option>
+<option value="NRT">東京／成田</option>
+<option value="XTY">東京／羽田・成田</option>
+<option value="ITM">大阪／伊丹</option>
+<option value="KIX">大阪／関空</option>
+<option value="XOS">大阪／伊丹・関空・神戸</option>
+<option value="CTS">札幌／新千歳</option>
+<option value="XNG">名古屋／中部・小牧</option>
+<option value="FUK">福岡</option>
+<option value="OKA">沖縄／那覇</option>
+<option value="SDJ">仙台</option>
+<option value="HIJ">広島</option>
+</optgroup>
+<optgroup label="北海道エリア" class="title_option">
+<option value="CTS">札幌／新千歳</option>
+<option value="OKD">札幌／丘珠</option>
+<option value="WKJ">稚内</option>
+<option value="RIS">利尻</option>
+<option value="MMB">女満別</option>
+<option value="MBE">オホーツク紋別</option>
+<option value="SHB">根室中標津</option>
+<option value="KUH">釧路</option>
+<option value="AKJ">旭川</option>
+<option value="OBO">帯広</option>
+<option value="HKD">函館</option>
+<option value="OIR">奥尻</option>
+</optgroup>
+<optgroup label="東北エリア" class="title_option">
+<option value="AOJ">青森</option>
+<option value="ONJ">大館能代</option>
+<option value="HNA">花巻</option>
+<option value="MSJ">三沢</option>
+<option value="AXT">秋田</option>
+<option value="SYO">庄内</option>
+<option value="GAJ">山形</option>
+<option value="SDJ">仙台</option>
+<option value="FKS">福島</option>
+</optgroup>
+<optgroup label="関東エリア" class="title_option">
+<option value="HND">東京／羽田</option>
+<option value="NRT">東京／成田</option>
+<option value="IBR">茨城</option>
+<option value="HAC">八丈島</option>
+</optgroup>
+<optgroup label="信越エリア" class="title_option">
+<option value="KIJ">新潟</option>
+<option value="MMJ">松本</option>
+</optgroup>
+<optgroup label="北陸エリア" class="title_option">
+<option value="KMQ">小松</option>
+<option value="TOY">富山</option>
+<option value="NTQ">能登</option>
+</optgroup>
+<optgroup label="東海エリア" class="title_option">
+<option value="NGO">名古屋／中部</option>
+<option value="NKM">名古屋／小牧</option>
+<option value="FSZ">富士山静岡</option>
+</optgroup>
+<optgroup label="近畿エリア" class="title_option">
+<option value="ITM">大阪／伊丹</option>
+<option value="KIX">大阪／関空</option>
+<option value="UKB">神戸</option>
+<option value="TJH">但馬</option>
+<option value="SHM">南紀白浜</option>
+</optgroup>
+<optgroup label="中国(山陰・山陽)エリア" class="title_option">
+<option value="TTJ">鳥取</option>
+<option value="YGJ">米子</option>
+<option value="IZO">出雲</option>
+<option value="OKI">隠岐</option>
+<option value="IWJ">石見</option>
+<option value="OKJ">岡山</option>
+<option value="HIJ">広島</option>
+<option value="UBJ">山口宇部</option>
+<option value="IWK">岩国</option>
+</optgroup>
+<optgroup label="四国エリア" class="title_option">
+<option value="TAK">高松</option>
+<option value="TKS">徳島</option>
+<option value="MYJ">松山</option>
+<option value="KCZ">高知</option>
+</optgroup>
+<optgroup label="九州エリア" class="title_option">
+<option value="FUK">福岡</option>
+<option value="KKJ">北九州</option>
+<option value="NGS">長崎</option>
+<option value="IKI">壱岐</option>
+<option value="TSJ">対馬</option>
+<option value="FUJ">五島福江</option>
+<option value="KMJ">熊本</option>
+<option value="AXJ">天草</option>
+<option value="HSG">佐賀</option>
+<option value="OIT">大分</option>
+<option value="KMI">宮崎</option>
+<option value="KOJ">鹿児島</option>
+<option value="TNE">種子島</option>
+<option value="KUM">屋久島</option>
+<option value="ASJ">奄美大島</option>
+<option value="KKX">喜界島</option>
+<option value="OKE">沖永良部</option>
+<option value="RNJ">与論</option>
+<option value="TKN">徳之島</option>
+</optgroup>
+<optgroup label="沖縄エリア" class="title_option">
+<option value="OKA">沖縄／那覇</option>
+<option value="AGJ">粟国</option>
+<option value="UEO">久米島</option>
+<option value="KTD">北大東</option>
+<option value="MMD">南大東</option>
+<option value="MMY">宮古</option>
+<option value="SHI">下地島</option>
+<option value="TRA">多良間</option>
+<option value="ISG">石垣</option>
+<option value="HTR">波照間</option>
+<option value="OGN">与那国</option>
+</optgroup>
+
+						</select>
+					</div>
+					<div class="search_item search_item--dest ui-select">
+						<p class="ui-select_disp">目的地：<span class="ui-select_disp_txt">&nbsp;</span></p>
+						<select class="ui-select_select" name="DIST">
+							<option value="">選択してください</option>
+							<optgroup label="国内主要空港" class="title_option">
+<option value="HND">東京／羽田</option>
+<option value="NRT">東京／成田</option>
+<option value="XTY">東京／羽田・成田</option>
+<option value="ITM">大阪／伊丹</option>
+<option value="KIX">大阪／関空</option>
+<option value="XOS">大阪／伊丹・関空・神戸</option>
+<option value="CTS">札幌／新千歳</option>
+<option value="XNG">名古屋／中部・小牧</option>
+<option value="FUK">福岡</option>
+<option value="OKA">沖縄／那覇</option>
+<option value="SDJ">仙台</option>
+<option value="HIJ">広島</option>
+</optgroup>
+<optgroup label="北海道エリア" class="title_option">
+<option value="CTS">札幌／新千歳</option>
+<option value="OKD">札幌／丘珠</option>
+<option value="WKJ">稚内</option>
+<option value="RIS">利尻</option>
+<option value="MMB">女満別</option>
+<option value="MBE">オホーツク紋別</option>
+<option value="SHB">根室中標津</option>
+<option value="KUH">釧路</option>
+<option value="AKJ">旭川</option>
+<option value="OBO">帯広</option>
+<option value="HKD">函館</option>
+<option value="OIR">奥尻</option>
+</optgroup>
+<optgroup label="東北エリア" class="title_option">
+<option value="AOJ">青森</option>
+<option value="ONJ">大館能代</option>
+<option value="HNA">花巻</option>
+<option value="MSJ">三沢</option>
+<option value="AXT">秋田</option>
+<option value="SYO">庄内</option>
+<option value="GAJ">山形</option>
+<option value="SDJ">仙台</option>
+<option value="FKS">福島</option>
+</optgroup>
+<optgroup label="関東エリア" class="title_option">
+<option value="HND">東京／羽田</option>
+<option value="NRT">東京／成田</option>
+<option value="IBR">茨城</option>
+<option value="HAC">八丈島</option>
+</optgroup>
+<optgroup label="信越エリア" class="title_option">
+<option value="KIJ">新潟</option>
+<option value="MMJ">松本</option>
+</optgroup>
+<optgroup label="北陸エリア" class="title_option">
+<option value="KMQ">小松</option>
+<option value="TOY">富山</option>
+<option value="NTQ">能登</option>
+</optgroup>
+<optgroup label="東海エリア" class="title_option">
+<option value="NGO">名古屋／中部</option>
+<option value="NKM">名古屋／小牧</option>
+<option value="FSZ">富士山静岡</option>
+</optgroup>
+<optgroup label="近畿エリア" class="title_option">
+<option value="ITM">大阪／伊丹</option>
+<option value="KIX">大阪／関空</option>
+<option value="UKB">神戸</option>
+<option value="TJH">但馬</option>
+<option value="SHM">南紀白浜</option>
+</optgroup>
+<optgroup label="中国(山陰・山陽)エリア" class="title_option">
+<option value="TTJ">鳥取</option>
+<option value="YGJ">米子</option>
+<option value="IZO">出雲</option>
+<option value="OKI">隠岐</option>
+<option value="IWJ">石見</option>
+<option value="OKJ">岡山</option>
+<option value="HIJ">広島</option>
+<option value="UBJ">山口宇部</option>
+<option value="IWK">岩国</option>
+</optgroup>
+<optgroup label="四国エリア" class="title_option">
+<option value="TAK">高松</option>
+<option value="TKS">徳島</option>
+<option value="MYJ">松山</option>
+<option value="KCZ">高知</option>
+</optgroup>
+<optgroup label="九州エリア" class="title_option">
+<option value="FUK">福岡</option>
+<option value="KKJ">北九州</option>
+<option value="NGS">長崎</option>
+<option value="IKI">壱岐</option>
+<option value="TSJ">対馬</option>
+<option value="FUJ">五島福江</option>
+<option value="KMJ">熊本</option>
+<option value="AXJ">天草</option>
+<option value="HSG">佐賀</option>
+<option value="OIT">大分</option>
+<option value="KMI">宮崎</option>
+<option value="KOJ">鹿児島</option>
+<option value="TNE">種子島</option>
+<option value="KUM">屋久島</option>
+<option value="ASJ">奄美大島</option>
+<option value="KKX">喜界島</option>
+<option value="OKE">沖永良部</option>
+<option value="RNJ">与論</option>
+<option value="TKN">徳之島</option>
+</optgroup>
+<optgroup label="沖縄エリア" class="title_option">
+<option value="OKA">沖縄／那覇</option>
+<option value="AGJ">粟国</option>
+<option value="UEO">久米島</option>
+<option value="KTD">北大東</option>
+<option value="MMD">南大東</option>
+<option value="MMY">宮古</option>
+<option value="SHI">下地島</option>
+<option value="TRA">多良間</option>
+<option value="ISG">石垣</option>
+<option value="HTR">波照間</option>
+<option value="OGN">与那国</option>
+</optgroup>
+
+						</select>
+					</div>
+					<div class="search_item search_item--date ico-top-before">
+						<input id="datepicker-da" type="hidden" value="">
+						<input type="hidden" name="YYYYMMDDDA">
+						<input type="hidden" name="YYYYMMDDDART">
+					</div>
+					<button class="search_submit" type="submit">検 索</button>
+					<input type="hidden" name="KBN2" value="1">
+				</form>
+			</div>
+			<div class="search_panel search_panel--hotel search_panel--int clr" id="search-inthotel">
+				<form id="search_form_ihotel" name="ihotel" action="/stay/search_result/" method="GET">
+					<input value="89" name="ignore_countries[]" type="hidden" class="ignore_countries">
+					<div class="search_item search_item--word ui-text ico-top-before">
+						<input class="ui-text_input" id="search_destination_ihotel" type="text" name="destination" placeholder="エリアまたはホテル名を入力">
+						<a class="ui-delete" href="#" data-id="hotel"></a>
+					</div>
+					<div class="search_item search_item--date ico-top-before">
+						<input id="datepicker-ih" type="hidden" value="">
+						<input id="ih_checkin" type="hidden" name="checkin">
+						<input id="ih_checkout" type="hidden" name="checkout">
+					</div>
+					<div class="search_item search_item--option ui-select">
+						<a class="ui-select_trigger ui-picker" href="#" data-disp="hotel">&nbsp;</a>
+						<input type="hidden" name="heads" value="2">
+						<input type="hidden" name="rooms" value="1">
+					</div>
+					<button class="search_submit" type="submit" onclick="return searchIHotel()">検 索</button>
+				</form>
+			</div>
+			<div class="search_panel search_panel--tour search_panel--int clr" id="search-inttour">
+				<form id="form-intTour" action="/db/user/search_tour.asp" onsubmit="return searchIT()">
+					<div class="search_item search_item--dep">
+						<a class="search_item_trigger ui-trigger" href="#it-dep-opt">出発地：<span class="search_item_trigger_val">東京</span></a>
+						<input type="hidden" name="DEP" value="TYO">
+						<section class="menu" id="it-dep-opt">
+							<div class="menu_body" id="depIT-list">
+							</div>
+						</section>
+					</div>
+					<div class="search_item search_item--dest clr">
+						<a class="search_item_trigger ui-trigger" href="#it-dest-opt">目的地：<span class="search_item_trigger_val">選択してください</span></a>
+						<input type="hidden" name="A" value="">
+						<input type="hidden" name="C" value="">
+						<input type="hidden" name="DIST" value="">
+						<section class="menu" id="it-dest-opt">
+							<div class="menu_body">
+								<div class="menu_cont" id="destIT-list">
+								</div>
+							</div>
+							<div class="menu_body">
+								<div class="menu_cont" id="destIT-country">
+								</div>
+							</div>
+							<div class="menu_body">
+								<div class="menu_cont" id="destIT-city">
+								</div>
+							</div>
+							<div class="menu_foot">
+								<a class="menu_back" href="#">戻る</a>
+							</div>
+						</section>
+					</div>
+					<div class="search_item search_item--date ico-top-before">
+						<input id="datepicker-it" type="hidden" value="">
+						<input type="hidden" name="YYYYMMDDIT">
+					</div>
+					<div class="search_item search_item--option ui-select">
+						<a class="ui-select_trigger ui-picker" href="#" data-disp="tour">&nbsp;</a>
+						<input type="hidden" name="TERM1">
+						<input type="hidden" name="TERM2">
+					</div>
+					<button class="search_submit" type="submit">検 索</button>
+				</form>
+			</div>
+			<div class="search_panel search_panel--air search_panel--int clr" id="search-intair">
+				<form id="form-intAir" action="/db/user/search_Yair.asp" onsubmit="return searchIA()">
+					<div id="dep-select-item" class="search_item search_item--dep">
+						<div class="search_trigger">
+							<input id="origin-place-name-text" class="search_keyword search_item_trigger ui-trigger" type="text" name="" placeholder="都市または空港を入力" value="東京" data-id="dep-select" href="#ia-dep-opt" autocomplete="off">
+							<p class="search_trigger_ttl">出発地：</p>
+							<a class="ui-delete" href="#" data-id="intair"></a>
+						</div>
+						<input id='origin_place' type="hidden" name="DEP" value="TYO">
+						<input id='origin_type' type="hidden" name="DEP_TYPE" value="city">
+						<section class="menu" id="ia-dep-opt">
+							<div class="menu_body" id="depIA-list">
+							</div>
+							<div class="menu_body" id="depIA-list2">
+							</div>
+							<div class="menu_body" id="depIA-list3">
+							</div>
+							<div class="menu_foot">
+								<a class="menu_back" href="#">戻る</a>
+							</div>
+						</section>
+						<section class="menu search_suggest clr">
+							<div class="search_panel_body">
+								<div id="origin-place-panel-suggest" class="search_panel_cont">
+									<ul class="search_panel_list" data-id="suggest"></ul>
+								</div>
+							</div>
+						</section>
+					</div>
+					<div id="dst-select-item" class="search_item search_item--dest">
+						<div class="search_trigger">
+							<input id="destination-place-name-text" class="search_keyword search_item_trigger ui-trigger" type="text" name="" placeholder="都市または空港を入力" value="" data-id="dest-select" href="#ia-dest-opt" autocomplete="off">
+							<p class="search_trigger_ttl">目的地：</p>
+							<a class="ui-delete" href="#" data-id="intair"></a>
+						</div>
+						<input id='destination_place' type="hidden" name="DEST" value="">
+						<input id='destination_type' type="hidden" name="DEST_TYPE" value="">
+						<section class="menu" id="ia-dest-opt">
+							<div class="menu_body" id="destIA-list">
+							</div>
+							<div class="menu_body" id="destIA-list2">
+							</div>
+							<div class="menu_body" id="destIA-list3">
+							</div>
+							<div class="menu_foot">
+								<a class="menu_back" href="#">戻る</a>
+							</div>
+						</section>
+						<section class="menu search_suggest clr">
+							<div class="search_panel_body">
+								<div id="destination-place-panel-suggest" class="search_panel_cont">
+									<ul class="search_panel_list" data-id="suggest"></ul>
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="search_item search_item--date ico-top-before">
+						<input id="datepicker-ia" type="hidden" value="">
+						<input type="hidden" name="YYYYMMDDIA">
+						<input type="hidden" name="YYYYMMDDIART">
+					</div>
+					<button class="search_submit" type="submit">検 索</button>
+				</form>
+			</div>
+			<div class="picker" id="picker">
+				<div class="picker_body" data-disp="hotel">
+					<p class="picker_ttl">部屋数</p>
+					<div class="picker_cont">
+						<p id="rooms-picker" class="picker_val">&nbsp;</p>
+						<a class="picker_change picker_change--minus" href="#" data-id="rooms"></a>
+						<a class="picker_change picker_change--plus" href="#" data-id="rooms"></a>
+					</div>
+					<p class="picker_ttl">宿泊人数</p>
+					<div class="picker_cont">
+						<p id="heads-picker" class="picker_val">&nbsp;</p>
+						<a class="picker_change picker_change--minus" href="#" data-id="heads"></a>
+						<a class="picker_change picker_change--plus" href="#" data-id="heads"></a>
+					</div>
+				</div>
+				<div class="picker_body" data-disp="domtour">
+					<p class="picker_ttl">泊数</p>
+					<div class="picker_cont">
+						<p id="STAY-picker" class="picker_val">&nbsp;</p>
+						<a class="picker_change picker_change--minus" href="#" data-id="STAY"></a>
+						<a class="picker_change picker_change--plus" href="#" data-id="STAY"></a>
+					</div>
+				</div>
+				<div class="picker_body" data-disp="tour">
+					<p class="picker_ttl">日数</p>
+					<div class="picker_cont">
+						<p id="TERM-picker" class="picker_val">&nbsp;</p>
+						<a class="picker_change picker_change--minus" href="#" data-id="TERM"></a>
+						<a class="picker_change picker_change--plus" href="#" data-id="TERM"></a>
+					</div>
+				</div>
+				<a class="picker_close" href="#">閉じる</a>
+			</div>
+		</div>
+	</section>
+</div>
+
+
+
+
+
+<div class="ad_banner">
+	<p>It is a site where you can introduce and book sightseeing spots and fun in Japan.</p>
+</div>
+
+
+<div class="content--gray">
+	<div class="content_wrapper">
+
+		<!--AREA-->
+		<div class="pickup_seasonal">
+			<h2 class="layout_heading"><img src="img/title_area.png" alt="Area" title="Area"></h2>
+			<div class="grid_wrapper grid_wrapper--20 partially_hidden" id="guide_article_seasonal" data-module="partiallyHidden">
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_tokyo.jpg" alt="TOKYO" class="card_image lazy">
+						</figure>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_fuji.jpg" alt="Mt.FUJI" class="card_image lazy">
+						</figure>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_hokkaidou.jpg" alt="HOKKAIDOU" class="card_image lazy">
+						</figure>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_okinawa.jpg" alt="OKINAWA" class="card_image lazy">
+						</figure>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_oosaka.jpg" alt="OOSAKA" class="card_image lazy">
+						</figure>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_kyoto.jpg" alt="KYOTO" class="card_image lazy">
+						</figure>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_hiroshima.jpg" alt="HIROSHIMA" class="card_image lazy">
+						</figure>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_other.jpg" alt="OTHER" class="card_image lazy">
+						</figure>
+					</a>
+				</div>
+
+
+			</div>
+		</div>
+
+		<!--Category-->
+		<div class="pickup_seasonal">
+			<h2 class="layout_heading"><img src="img/title_category.png" alt="Category" title="Category"></h2>
+			<div class="grid_wrapper grid_wrapper--20 partially_hidden" id="guide_article_seasonal" data-module="partiallyHidden">
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_restaurant.jpg" alt="Restaurant" class="card_image lazy">
+						</figure>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_play.jpg" alt="Play" class="card_image lazy">
+						</figure>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_see.jpg" alt="See" class="card_image lazy">
+						</figure>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_anime2.jpg" alt="Anime" class="card_image lazy">
+						</figure>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!--Word of mouth ranking-->
+		<div class="pickup_seasonal">
+			<h2 class="layout_heading"><img src="img/title_world.png" alt="Word of mouth ranking" title="Word of mouth ranking"></h2>
+			<div class="grid_wrapper grid_wrapper--20 partially_hidden" id="guide_article_seasonal" data-module="partiallyHidden">
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_world01.jpg" alt="No1" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">HIS</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+						</div>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/int/taiwan.html">
+						<figure class="card_figure">
+							<img src="img/top_world02.jpg" alt="No2" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">AMERICAN EXPRESS Inc.</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+
+						</div>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/int/taiwan.html">
+						<figure class="card_figure">
+							<img src="img/top_world03.jpg" alt="No3" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">AMERICAN EXPRESS Inc.</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+
+						</div>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/int/taiwan.html">
+						<figure class="card_figure">
+							<img src="img/top_world04.jpg" alt="No4" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">AMERICAN EXPRESS Inc.</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+		<!--New arrival-->
+		<div class="pickup_seasonal">
+			<h2 class="layout_heading"><img src="img/title_arrival.png" alt="New arrival" title="New arrival"></h2>
+			<div class="grid_wrapper grid_wrapper--20 partially_hidden" id="guide_article_seasonal" data-module="partiallyHidden">
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_arrival01.jpg" alt="Hokkaido" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">AMERICAN EXPRESS Inc.</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+							<p>￥5,800 / Day</p>
+						</div>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_arrival02.jpg" alt="Kyoto" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">AMERICAN EXPRESS Inc.</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+							<p>￥5,800 / Day</p>
+						</div>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_arrival03.jpg" alt="Tokyo" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">AMERICAN EXPRESS Inc.</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+							<p>￥5,800 / Day</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!--Reservation number ranking-->
+		<div class="pickup_seasonal">
+			<h2 class="layout_heading"><img src="img/title_res.png" alt="Reservation number ranking" title="Reservation number ranking"></h2>
+			<div class="grid_wrapper grid_wrapper--20 partially_hidden" id="guide_article_seasonal" data-module="partiallyHidden">
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_res01.jpg" alt="No1" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">HIS</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+							<p>￥5,800 / Day</p>
+						</div>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_res02.jpg" alt="No2" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">HIS</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+							<p>￥5,800 / Day</p>
+						</div>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_res03.jpg" alt="No3" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">HIS</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+							<p>￥5,800 / Day</p>
+						</div>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_res04.jpg" alt="No4" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">HIS</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+							<p>￥5,800 / Day</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!--Anime-->
+		<div class="pickup_seasonal">
+			<h2 class="layout_heading"><img src="img/title_anime.png" alt="Anime" title="Anime"></h2>
+			<div class="grid_wrapper grid_wrapper--20 partially_hidden" id="guide_article_seasonal" data-module="partiallyHidden">
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_anime01.jpg" alt="No1" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">HIS</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+							<p>￥5,800 / Day</p>
+						</div>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_anime02.jpg" alt="No2" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">HIS</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+							<p>￥5,800 / Day</p>
+						</div>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_anime03.jpg" alt="No3" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">HIS</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+							<p>￥5,800 / Day</p>
+						</div>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_anime04.jpg" alt="No4" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">HIS</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+							<p>￥5,800 / Day</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!--See-->
+		<div class="pickup_seasonal">
+			<h2 class="layout_heading"><img src="img/title_see.png" alt="See" title="See"></h2>
+			<div class="grid_wrapper grid_wrapper--20 partially_hidden" id="guide_article_seasonal" data-module="partiallyHidden">
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_res01.jpg" alt="No1" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">HIS</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+							<p>￥5,800 / Day</p>
+						</div>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_res02.jpg" alt="No2" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">HIS</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+							<p>￥5,800 / Day</p>
+						</div>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_res03.jpg" alt="No3" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">HIS</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+							<p>￥5,800 / Day</p>
+						</div>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_res04.jpg" alt="No4" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">HIS</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+							<p>￥5,800 / Day</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!--Play-->
+		<div class="pickup_seasonal">
+			<h2 class="layout_heading"><img src="img/title_play.png" alt="play" title="play"></h2>
+			<div class="grid_wrapper grid_wrapper--20 partially_hidden" id="guide_article_seasonal" data-module="partiallyHidden">
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_res01.jpg" alt="No1" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">HIS</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+							<p>￥5,800 / Day</p>
+						</div>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_res02.jpg" alt="No2" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">HIS</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+							<p>￥5,800 / Day</p>
+						</div>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_res03.jpg" alt="No3" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">HIS</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+							<p>￥5,800 / Day</p>
+						</div>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_res04.jpg" alt="No4" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">HIS</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+							<p>￥5,800 / Day</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!--Healing-->
+		<div class="pickup_seasonal">
+			<h2 class="layout_heading"><img src="img/title_healing.png" alt="Healing" title="Healing"></h2>
+			<div class="grid_wrapper grid_wrapper--20 partially_hidden" id="guide_article_seasonal" data-module="partiallyHidden">
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_res01.jpg" alt="No1" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">HIS</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+							<p>￥5,800 / Day</p>
+						</div>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_res02.jpg" alt="No2" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">HIS</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+							<p>￥5,800 / Day</p>
+						</div>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_res03.jpg" alt="No3" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">HIS</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+							<p>￥5,800 / Day</p>
+						</div>
+					</a>
+				</div>
+				<div class="col--one col--one-quarter--medium" data-module-labelledby="partiallyHidden">
+					<a href="/special/summer/">
+						<figure class="card_figure">
+							<img src="img/top_res04.jpg" alt="No4" class="card_image lazy">
+						</figure>
+						<div class="card_content">
+							<h3 class="card_title">HIS</h3>
+							<p>The description about the ranking is included here.The description about the ranking is included...</p>
+							<p>￥5,800 / Day</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="layout_flex layout_flex--space-between">
+		<!-- .main -->
+		<div>
+			<h2 class="layout_heading">旅先を見つける</h2>
+			<div class="find_destination section">
+				<div class="grid_wrapper grid_wrapper--20" id="guide_article" data-module="matchHeight">
+
+					<div class="col--one-half  col--one-quarter--medium" >
+						<a class="card card--image-top" href="https://www.travel.co.jp/guide/article/38466/">
+						  	<figure class="card_figure">
+						  		<img class="card_image lazy" src="https://static.travel.co.jp/images/common/img_dummy.gif" data-src="https://img-cdn.guide.travel.co.jp/article/92/38466/47D11E3773D7471D87253C11F3F8CAB5_M.jpg" alt="古都・奈良らしいお寺とあじさいのコラボ" >
+						  	</figure>
+						  	<div class="card_content">
+								<h3 class="card_title">古都・奈良らしいお寺とあじさいのコラボ</h3>
+							    <p class="card_name_tag">ナビゲーター：乾口 達司</p>
+							</div>
+						</a>
+					</div>
+
+					  <div class="col--one-half  col--one-quarter--medium" >
+					  	<a class="card card--image-top" href="https://www.travel.co.jp/guide/article/38873/">
+					  		<figure class="card_figure">
+					  			<img class="card_image lazy" src="https://static.travel.co.jp/images/common/img_dummy.gif" data-src="https://img-cdn.guide.travel.co.jp/article/725/38873/E74318C91D664302A5C20BAEA9CEBA2B_M.jpg" alt="九フン名物！海悦楼茶坊のテラスで台湾茶" >
+					  		</figure>
+					  		<div class="card_content">
+						    	<h3 class="card_title">九フン名物！海悦楼茶坊のテラスで台湾茶</h3>
+						    	<p class="card_name_tag">ナビゲーター：赤木 リン</p>
+						    </div>
+					  	</a>
+					  </div>
+
+					  <div class="col--one-half  col--one-quarter--medium" >
+					  	<a class="card card--image-top" href="https://www.travel.co.jp/guide/article/38833/">
+					  		<figure class="card_figure">
+					  			<img class="card_image lazy" src="https://static.travel.co.jp/images/common/img_dummy.gif" data-src="https://img-cdn.guide.travel.co.jp/article/943/38833/4DA1195A7FEA4FD3B168208425ECFC05_M.jpg" alt="ニュージーランドの最北端を制覇せよ！" >
+					  		</figure>
+					  		<div class="card_content">
+						    	<h3 class="card_title">ニュージーランドの最北端を制覇せよ！</h3>
+						    	<p class="card_name_tag">ナビゲーター：村松 希美</p>
+						    </div>
+					  	</a>
+					  </div>
+
+					  <div class="col--one-half  col--one-quarter--medium" >
+					  	<a class="card card--image-top" href="https://www.travel.co.jp/guide/article/10810/">
+					  		<figure class="card_figure">
+					  			<img class="card_image lazy" src="https://static.travel.co.jp/images/common/img_dummy.gif" data-src="https://img-cdn.guide.travel.co.jp/article/560/10810/FDC04CD6089744AA94D04F3CF313B5E4_M.jpg" alt="さくらんぼ狩りで品種いろいろ食べ比べ！" >
+					  		</figure>
+					  		<div class="card_content">
+						    	<h3 class="card_title">さくらんぼ狩りで品種いろいろ食べ比べ！</h3>
+						    	<p class="card_name_tag">ナビゲーター：フルリーナ YOC</p>
+						    </div>
+					  	</a>
+					  </div>
+					  <div class="col--one-half  col--one-quarter--medium" >
+					  	<a class="card card--image-top" href="https://www.travel.co.jp/guide/article/10810/">
+					  		<figure class="card_figure">
+					  			<img class="card_image lazy" src="https://static.travel.co.jp/images/common/img_dummy.gif" data-src="https://img-cdn.guide.travel.co.jp/article/560/10810/FDC04CD6089744AA94D04F3CF313B5E4_M.jpg" alt="さくらんぼ狩りで品種いろいろ食べ比べ！" >
+					  		</figure>
+					  		<div class="card_content">
+						    	<h3 class="card_title">さくらんぼ狩りで品種いろいろ食べ比べ！</h3>
+						    	<p class="card_name_tag">ナビゲーター：フルリーナ YOC</p>
+						    </div>
+					  	</a>
+					  </div>
+					  <div class="col--one-half  col--one-quarter--medium" >
+					  	<a class="card card--image-top" href="https://www.travel.co.jp/guide/article/10810/">
+					  		<figure class="card_figure">
+					  			<img class="card_image lazy" src="https://static.travel.co.jp/images/common/img_dummy.gif" data-src="https://img-cdn.guide.travel.co.jp/article/560/10810/FDC04CD6089744AA94D04F3CF313B5E4_M.jpg" alt="さくらんぼ狩りで品種いろいろ食べ比べ！" >
+					  		</figure>
+					  		<div class="card_content">
+						    	<h3 class="card_title">さくらんぼ狩りで品種いろいろ食べ比べ！</h3>
+						    	<p class="card_name_tag">ナビゲーター：フルリーナ YOC</p>
+						    </div>
+					  	</a>
+					  </div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="content_wrapper">
+	<div class="ad_banner">
+		<!-- /5534564/TravelJP_PC_728x90_1-4_Top_wide_bottom -->
+<div id='div-gpt-ad-1510825553444-0' style='height:90px; width:728px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1510825553444-0'); });
+</script>
+</div>
+	</div>
+
+	<p class="back_to_top"><a class="ui-scroll" href="#">▲格安旅行の検索・比較 LINEトラベルjp トップへもどる</a></p>
+
+	<div class="alliance">
+		<p class="alliance_list">提携サイト：
+			<a target="_blank" href="http://travel.goo.ne.jp/" class="alliance_item">goo</a>
+			<a target="_blank" href="http://tournavi.jp/" class="alliance_item">ツアーナビ</a>
+		</p>
+		<p class="alliance_list">関連サイト：
+			<a target="_blank" href="https://shoppinggo.line.me/" class="alliance_item">SHOPPING GO</a>
+			<a target="_blank" href="https://delima.line.me/" class="alliance_item">LINEデリマ</a>
+			<a target="_blank" href="https://ec.line.me/" class="alliance_item">LINEショッピング</a>
+		</p>
+	</div>
+
+</div><!-- content_wrapper ends -->
+
+</div><!-- /.top_content -->
+
+</div><!-- /#container -->
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+	<symbol id="traveljp_logo" viewBox="0 0 291.6 66.2"><path d="M88.5 40.3c-1.4 6.5-1.7 9.1-2 11.2-1.7-.2-3.5-.3-5.3-.3-1.7 0-3.4.1-5.1.3 2.8-9.9 6.9-28.7 7.5-34.4-.7-.1-1.5-.1-2.4-.1-2.8 0-5.9.2-7.9.5.6-1.8.9-3.1 1-5 5.1.2 10.9.3 15.4.3 4.7 0 11.6-.2 15.4-.3-.6 1.5-1 3.3-1.1 5-2.3-.4-4.6-.5-6.4-.5-1 0-2.3 0-3.5.1-1.2 3.1-2.3 8.1-5.6 23.2zM118.5 31.9c-.6-.3-1.3-.7-2.7-.7-3.7 0-5.6 2.5-6.6 5.7-1 3.1-2.4 11-2.8 14.5-1.6-.2-3-.3-4.8-.3-1.4 0-3 .2-4.4.3 1.4-5.3 5.1-20.1 5.8-27.7 1.7.2 3 .3 4.8.3 1.9 0 3.4-.2 4.3-.3-.7 2.3-1.1 3.8-1.6 6.4 1-1.8 3.7-6.9 8.9-6.9.5 0 .9.1 1.2.1-1 3-1.4 5.1-1.5 8.2l-.6.4zM145.9 50.9c-1.7.8-3.4 1-4.8 1-2.8 0-4.6-1-5.8-3.9-1 1.3-3.1 4.2-7.8 4.2-4.1 0-7.8-2.3-7.8-7.3 0-8.5 8.8-9.1 13-9.4 3.1-.2 4.7-.4 4.7-3.4 0-3.2-1.6-4.7-4.8-4.7-2.5 0-5 1-7.1 2.4.1-.6.1-1.2.1-1.9s0-1.3-.1-2c3.1-1.7 6.6-3 10.7-3s9.5 1.1 9.5 7.9c0 2.8-.8 5.7-1.6 8.7-.7 2.8-1.5 6.2-1.5 7.5 0 1.2.5 2 1.8 2 .6 0 1.2-.1 1.8-.3l-.3 2.2zM128 44.5c0 1.8.9 3.3 2.9 3.3s3-1.2 3.6-3c.4-1.4 1.4-5.2 1.8-6.9-2.2.1-8.3.3-8.3 6.6zM178.7 24.1c-4.6 6.5-12.2 19.9-16 27.4-1.2-.2-2.5-.3-4.1-.3-1.3 0-3 .2-3.9.3-.4-5.5-1.9-17.9-4-27.7 1.2.1 3.3.3 4.8.3 1.4 0 3-.1 4.5-.3.4 5.9 1.1 14 2.3 19.7 3.1-5.2 7.7-14 10.1-19.7.7.1 1.7.3 3 .3s2.3-.2 3-.3l.3.3zM203.2 47.2c-.2.3-1 1.6-1.8 3.3-1.3.5-4.4 1.7-9.4 1.7-8.7 0-14-5-14-12.9 0-8.3 6-16.2 16-16.2 6.7 0 11.1 3.5 11.1 10.5 0 1.7-.2 3.3-.7 4.9-1.2-.2-3.1-.4-7.2-.4h-10c-.1.5-.1 1.3-.1 1.8 0 3.4 1.8 8.5 7.9 8.5 3.9 0 6.2-1.6 7.4-2.5l.8 1.3zm-6.9-11.9c.4-1.3 1.1-3.7 1.1-6.1 0-2.5-1.6-3.4-3-3.4-4.1 0-6.3 5.4-6.9 9.6h8.8zM216.9 9.8c1.5.2 2.8.3 4.5.3 1.7 0 3-.1 4.8-.3-1.9 7-6.9 29.7-9.1 41.7-1-.1-2.6-.3-4.6-.3-1.9 0-3.6.2-4.6.3 1.2-4.1 2.3-8.1 3.2-12.2 3.8-17.2 4.2-19.1 5.8-29.5zM235.4 47.3c0 2.7-2.2 4.9-4.9 4.9s-4.9-2.2-4.9-4.9c0-2.6 2.1-4.9 4.9-4.9 2.7 0 4.9 2.3 4.9 4.9zM235.8 66.1c.1-.9.1-1.7.1-2.6 2.8-.1 5.1-.1 6.5-5.7 1.4-5.9 6.3-31.7 6.7-34 1.6.2 3.1.3 4.8.3 1.7 0 2.9-.1 4.6-.3-1.9 6.6-3.3 13.4-4.6 20.3-2.3 12.4-3.2 15-5.3 17.8-2.8 3.7-7 4.4-10.1 4.4-1-.1-1.9-.2-2.7-.2zM251.1 14.4c0-2.5 2-4.6 4.6-4.6 2.5 0 4.6 2 4.6 4.6 0 2.5-2 4.6-4.6 4.6-2.5-.1-4.6-2.2-4.6-4.6zM277.7 52.1c-5.5 0-7.7-3.7-8.5-4.9-1.6 5.9-3 13.2-3.7 18.1-1.3-.2-2.6-.3-4.5-.3-1.7 0-3.5.1-4.7.3 2-6.8 2.3-8.3 6.8-29.5.8-3.9 1.6-7.9 2-12 .9.2 2.7.3 4.2.3 1.6 0 3.3-.2 4.4-.3-.6 2.1-.7 2.4-1 4.2 1.1-1.5 3.5-4.9 8.9-4.9 4.7 0 9.9 2.9 9.9 11.3.1 8.5-5.8 17.7-13.8 17.7zm-2.9-4.5c2.3 0 3.8-1.5 4.8-3.4 2.2-4.2 3.1-9 3.1-12.3 0-4.2-2.7-5-4.2-5-6.4 0-7.9 13.1-7.9 15.5 0 1.8.9 5.2 4.2 5.2zM36.9 61.5c4.6 0 9.1-3.3 10.9-7.7-8.2-.9-16.6-1.3-25.1-1.3-7 0-14 .3-20.8.9L0 61.5h36.9zM32.3 40.2c-2.4 2.3-6.9 5.9-11 4.8-1.1-.3-1.9-1-2.2-1.9-.6-1.9.8-4.4.8-4.5l7.3-14H21l.1-.2c.4-1.6 1.6-2.2 2.8-2.2h4.7l3.5-6.7c.5-1 1.1-1.7 2.1-2.3.5-.3 1.5-.7 2.6-.9.5-.1.8 0 1 .2.1.2.1.5-.1.8 0 0-2.1 4.1-4.6 8.9h3.4c1 0 2.2.6 1.8 2.2l-.1.2h-6.4c-3.1 5.9-6.3 12.2-7 13.5-1 1.7-1.3 3.1-1.1 3.8.1.4.4.6.8.7 1.1.3 2.6-.4 4.6-2.2 6.6-5.7 25.4-25.6 28.5-28.9L60.3 0H23.4C18.3 0 13.2 4.2 12 9.2L2.4 51.1c6.8-.6 13.7-.9 20.3-.9 8.4 0 17.3.5 25.7 1.4l8.1-35.1c-4.2 4.1-21.6 21.3-23.4 23-.3.2-.5.4-.8.7z"/></symbol>
+</svg>
+
+
+<!-- .g-footer -->
+<div class="g-footer">
+
+
+
+<div class="g-footer_sns clr">
+	<div class="g-footer_sns_cont">
+		<p class="g-footer_sns_ttl">このページをシェア</p>
+		<ul class="g-footer_sns_list clr">
+			<li>
+				<div data-sns="fb-share" data-snsLayout="button"></div>
+			</li>
+			<li>
+				<div data-sns="tw-tweet" data-snsCount="none"></div>
+			</li>
+			<li>
+				<div data-sns="hb-bookmark" data-snsLayout="basic-label"></div>
+			</li>
+			<li>
+				<div class="line-it-button" data-lang="ja" data-type="share-a" data-ver="2" style="display: none;"></div>
+			</li>
+		</ul>
+	</div>
+</div>
+<ul class="g-footer_sub">
+	<li class="g-footer_sub_item"><a class="g-footer_sub_link" href="/map/">サイトマップ</a></li>
+	<li class="g-footer_sub_item"><a class="g-footer_sub_link" href="/clkcnt.asp?p=224302" target="_blank">お問い合わせ</a></li>
+	<li class="g-footer_sub_item"><a class="g-footer_sub_link" href="/ad/">ビジネス向け(広告・参画)ご案内</a></li>
+	<li class="g-footer_sub_item"><a class="g-footer_sub_link" href="/docs/notice.html">ご利用条件</a></li>
+</ul>
+<a class="fade-top ui-scroll" href="#"><img class="fade-top_img" src="https://static.travel.co.jp/images/common/fadetop.png" width="44" height="44"></a>
+
+</body>
+</html>

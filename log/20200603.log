@@ -1,0 +1,2 @@
+date:2020/06/03 07:05:04,  ip:162.158.119.102,  hostname:162.158.119.102,  requestUrl:/controller/admin/login_ct.php,  method:POST,  browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36,  遷移元:http://jis-j.com/admin/login.php
+date:2020/06/03 07:05:04,  ip:162.158.119.102,  hostname:162.158.119.102,  requestUrl:/admin/menu.php,  method:GET,  browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36,  遷移元:http://jis-j.com/admin/login.php

@@ -1,0 +1,180 @@
+store_basic_id Nothing
+auth_flg Nothing
+store_type Nothing
+company_name Nothing
+company_name_eng Nothing
+contact_name Nothing
+contact_name_kana Nothing
+contact_name_eng Nothing
+mail Nothing
+password Nothing
+tel Nothing
+fax Nothing
+emergency_tel Nothing
+emergency_contact_name Nothing
+location Nothing
+url Nothing
+img Nothing
+addr Nothing
+trading_hours Nothing
+youtube_tag Nothing
+bank_name Nothing
+bank_branch Nothing
+bank_branch_number Nothing
+bank_type Nothing
+bank_number Nothing
+bank_meigi Nothing
+cd_title Nothing
+cd_deatil Nothing
+cdf_title Nothing
+cdf_img1 Nothing
+cdf_detail1 Nothing
+cdf_img2 Nothing
+cdf_detail2 Nothing
+cdf_img3 Nothing
+cdf_detail3 Nothing
+browse_num Nothing
+reserve_num Nothing
+review_point Nothing
+review_num Nothing
+review_ave Nothing
+etc_comment Nothing
+del_flg Nothing
+create_at Nothing
+update_at Nothing
+'store_basic_id',
+'auth_flg',
+'store_type',
+'company_name',
+'company_name_eng',
+'contact_name',
+'contact_name_kana',
+'contact_name_eng',
+'mail',
+'password',
+'tel',
+'fax',
+'emergency_tel',
+'emergency_contact_name',
+'location',
+'url',
+'img',
+'addr',
+'trading_hours',
+'youtube_tag',
+'bank_name',
+'bank_branch',
+'bank_branch_number',
+'bank_type',
+'bank_number',
+'bank_meigi',
+'cd_title',
+'cd_deatil',
+'cdf_title',
+'cdf_img1',
+'cdf_detail1',
+'cdf_img2',
+'cdf_detail2',
+'cdf_img3',
+'cdf_detail3',
+'browse_num',
+'reserve_num',
+'review_point',
+'review_num',
+'review_ave',
+'etc_comment',
+'del_flg',
+'create_at',
+'update_at',
+
+
+$post['store_basic_id'],
+$post['auth_flg'],
+$post['store_type'],
+$post['company_name'],
+$post['company_name_eng'],
+$post['contact_name'],
+$post['contact_name_kana'],
+$post['contact_name_eng'],
+$post['mail'],
+$post['password'],
+$post['tel'],
+$post['fax'],
+$post['emergency_tel'],
+$post['emergency_contact_name'],
+$post['location'],
+$post['url'],
+$post['img'],
+$post['addr'],
+$post['trading_hours'],
+$post['youtube_tag'],
+$post['bank_name'],
+$post['bank_branch'],
+$post['bank_branch_number'],
+$post['bank_type'],
+$post['bank_number'],
+$post['bank_meigi'],
+$post['cd_title'],
+$post['cd_deatil'],
+$post['cdf_title'],
+$post['cdf_img1'],
+$post['cdf_detail1'],
+$post['cdf_img2'],
+$post['cdf_detail2'],
+$post['cdf_img3'],
+$post['cdf_detail3'],
+$post['browse_num'],
+$post['reserve_num'],
+$post['review_point'],
+$post['review_num'],
+$post['review_ave'],
+$post['etc_comment'],
+$post['del_flg'],
+$post['create_at'],
+$post['update_at'],
+
+'store_basic_id' => $reult_detail['store_basic_id'],
+'auth_flg' => $reult_detail['auth_flg'],
+'store_type' => $reult_detail['store_type'],
+'company_name' => $reult_detail['company_name'],
+'company_name_eng' => $reult_detail['company_name_eng'],
+'contact_name' => $reult_detail['contact_name'],
+'contact_name_kana' => $reult_detail['contact_name_kana'],
+'contact_name_eng' => $reult_detail['contact_name_eng'],
+'mail' => $reult_detail['mail'],
+'password' => $reult_detail['password'],
+'tel' => $reult_detail['tel'],
+'fax' => $reult_detail['fax'],
+'emergency_tel' => $reult_detail['emergency_tel'],
+'emergency_contact_name' => $reult_detail['emergency_contact_name'],
+'location' => $reult_detail['location'],
+'url' => $reult_detail['url'],
+'img' => $reult_detail['img'],
+'addr' => $reult_detail['addr'],
+'trading_hours' => $reult_detail['trading_hours'],
+'youtube_tag' => $reult_detail['youtube_tag'],
+'bank_name' => $reult_detail['bank_name'],
+'bank_branch' => $reult_detail['bank_branch'],
+'bank_branch_number' => $reult_detail['bank_branch_number'],
+'bank_type' => $reult_detail['bank_type'],
+'bank_number' => $reult_detail['bank_number'],
+'bank_meigi' => $reult_detail['bank_meigi'],
+'cd_title' => $reult_detail['cd_title'],
+'cd_deatil' => $reult_detail['cd_deatil'],
+'cdf_title' => $reult_detail['cdf_title'],
+'cdf_img1' => $reult_detail['cdf_img1'],
+'cdf_detail1' => $reult_detail['cdf_detail1'],
+'cdf_img2' => $reult_detail['cdf_img2'],
+'cdf_detail2' => $reult_detail['cdf_detail2'],
+'cdf_img3' => $reult_detail['cdf_img3'],
+'cdf_detail3' => $reult_detail['cdf_detail3'],
+'browse_num' => $reult_detail['browse_num'],
+'reserve_num' => $reult_detail['reserve_num'],
+'review_point' => $reult_detail['review_point'],
+'review_num' => $reult_detail['review_num'],
+'review_ave' => $reult_detail['review_ave'],
+'etc_comment' => $reult_detail['etc_comment'],
+'del_flg' => $reult_detail['del_flg'],
+'create_at' => $reult_detail['create_at'],
+'update_at' => $reult_detail['update_at'],
+

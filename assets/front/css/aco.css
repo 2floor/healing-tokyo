@@ -1,0 +1,95 @@
+/* アコーディオン */
+.ac-container2{
+    width: auto;
+    /*margin: 30px auto;*/
+}
+.ac-container2 label{
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    color: #888;
+	font-family: "Sawarabi Mincho","ヒラギノ明朝 ProN W3",'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック','MS PGothic','メイリオ',Meiryo,sans-serif;
+}
+
+.ac-container2 label:hover{
+    background: #0e1243;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    color: #fff;
+}
+.ac-container2 label:after{
+    color: #fff;
+    font-family:"FontAwesome";
+    content:"\f067";
+    padding-left: 10px;
+}
+.ac-container2 input:checked ~ label::after {
+   color: #fff;
+   font-family:"FontAwesome";
+   content:"\f068";
+}
+.ac-container2 input{
+   display: none;
+}
+.ac-container2 div{
+   background: rgba(255, 255, 255, 0.5);
+   margin-top: -1px;
+   overflow: hidden;
+   height: 0px;
+   position: relative;
+   z-index: 10;
+   transition: 
+   height 0.3s ease-in-out, 
+   box-shadow 0.6s linear;
+}
+.ac-container2 input:checked ~ div{
+   transition: 
+   height 0.5s ease-in-out, 
+   box-shadow 0.1s linear;
+   box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+}
+.ac-container2 div p{
+   color: #777;
+   line-height: 23px;
+   font-size: 14px;
+   padding: 10px;
+   font-family: "Sawarabi Mincho","ヒラギノ明朝 ProN W3",'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック','MS PGothic','メイリオ',Meiryo,sans-serif;
+
+}
+/* 高さの定義 */
+.ac-container2 input:checked ~ div.ac-small{
+   height: 70px;
+}
+.ac-container2 input:checked ~ div.ac-big{
+   height: 180px;
+}
+
+@media (max-width: 767px) {
+
+
+/* 高さの定義 */
+.ac-container2 input:checked ~ div.ac-small{
+   height: 100px;
+}
+.ac-container2 input:checked ~ div.ac-big{
+   height: 250px;
+}
+
+
+}
+input.font-awesome {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+input.formTxt1_1::-webkit-input-placeholder {
+    font-weight: normal;
+}
+input.formTxt1_1:-ms-input-placeholder {
+    font-weight: normal;
+}
+input.formTxt1_1::-moz-placeholder {
+    font-weight: normal;
+}

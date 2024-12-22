@@ -1,0 +1,301 @@
+td.ptitle {
+  border-width: 0;
+  border-style: solid;
+  padding: 0 25 0 0;
+  margin: 0px;
+}
+
+td.pcxts {
+  border-width: 0;
+  border-style: solid;
+  padding: 0;
+  margin: 0px;
+  text-align: right;
+}
+
+td.thl {
+  background-color: #ccccff;
+  border-color: #ccccff;
+  border-width: 1px;
+  border-style: solid;
+  width: 180px;
+  padding: 5px;
+  margin: 0px;
+}
+
+td.thlToken {
+  background-color: #f9f9e0;
+  border-color: #ccccff;
+  border-width: 1px;
+  border-style: solid;
+  padding: 0.5em 0.5em 0.5em 5px;
+  margin: 0px;
+}
+
+td.thlt {
+  border-color: #ccccff;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  width: 350px;
+  padding: 5px;
+  margin: 0px;
+}
+
+td.ititle {
+  background-color: #e6e6fa;
+  border-color: #ccccff;
+  border-width: 0 1 1 1;
+  border-style: solid;
+  width: 180px;
+  padding: 5px;
+  margin: 0px;
+}
+
+td.ititletop {
+  background-color: #e6e6fa;
+  border-color: #ccccff;
+  border-width: 1px;
+  border-style: solid;
+  width: 180px;
+  padding: 5px;
+  margin: 0px;
+}
+
+td.ititlecommon {
+  background-color: #e6e6fa;
+  border-color: #ccccff;
+  border-width: 1px;
+  border-style: solid;
+  width: 180px;
+  padding: 5px;
+  margin: 0px;
+}
+
+td.ivalue {
+  border-color: #ccccff;
+  border-width: 0 1 1 1;
+  border-style: solid;
+  width: 480px;
+  padding: 5px;
+  margin: 0px;
+  word-break: break-all;
+}
+
+td.ivaluetop {
+  border-color: #ccccff;
+  border-width: 1px;
+  border-style: solid;
+  width: 480px;
+  padding: 5px;
+  margin: 0px;
+  word-break: break-all;
+}
+
+td.ivaluecommon {
+  border-color: #ccccff;
+  border-width: 1px;
+  border-style: solid;
+  width: 480px;
+  padding: 5px;
+  margin: 0px;
+  word-break: break-all;
+}
+
+td.tagititle {
+  background-color: #ccffcc;
+  border-color: #ccccff;
+  border-width: 0 1 1 1;
+  border-style: solid;
+  width: 100px;
+  padding: 5px;
+  margin: 0px;
+}
+
+td.tagititletop {
+  background-color: #ccffcc;
+  border-color: #ccccff;
+  border-width: 1px;
+  border-style: solid;
+  width: 100px;
+  padding: 5px;
+  margin: 0px;
+}
+
+td.tagivalue {
+  border-color: #ccccff;
+  border-width: 0 1 1 1;
+  border-style: solid;
+  width: 220px;
+  padding: 5px;
+  margin: 0px;
+  word-break: break-all;
+}
+
+td.tagivaluetop {
+  border-color: #ccccff;
+  border-width: 1px;
+  border-style: solid;
+  width: 220px;
+  padding: 5px;
+  margin: 0px;
+  word-break: break-all;
+}
+
+td.rititle {
+  background-color: #ffeebb;
+  border-color: #cc9999;
+  border-width: 0 1 1 1;
+  border-style: solid;
+  width: 180px;
+  padding: 5px;
+  margin: 0px;
+}
+
+td.rititletop {
+  background-color: #ffeebb;
+  border-color: #cc9999;
+  border-width: 1px;
+  border-style: solid;
+  width: 180px;
+  padding: 5px;
+  margin: 0px;
+}
+
+td.rititlecommon {
+  background-color: #ffeebb;
+  border-color: #cc9999;
+  border-width: 1px;
+  border-style: solid;
+  width: 180px;
+  padding: 5px;
+  margin: 0px;
+}
+
+td.rivalue {
+  border-color: #aa9999;
+  border-width: 0 1 1 1;
+  border-style: solid;
+  width: 480px;
+  padding: 5px;
+  margin: 0px;
+  word-break: break-all;
+}
+
+td.rivaluetop {
+  border-color: #aa9999;
+  border-width: 1px;
+  border-style: solid;
+  width: 480px;
+  padding: 5px;
+  margin: 0px;
+  word-break: break-all;
+}
+
+td.rivaluecommon {
+  border-color: #aa9999;
+  border-width: 1px;
+  border-style: solid;
+  width: 480px;
+  padding: 5px;
+  margin: 0px;
+  word-break: break-all;
+}
+
+div.system-message {
+  background: #fdc;
+  border: 2px solid #d00;
+  color: #500;
+  padding: .5em;
+  margin: 1em 0;
+}
+
+td.imgItemFrm {
+  background: #F0F8FF;
+  border: solid #78C0D4 1.0pt;
+  padding: 5.4pt 0mm 5.4pt 0mm;
+  text-align: center;
+  color: white;
+}
+
+table.paymentItemListTable {
+  border:solid #78C0D4 1.0pt;
+  border-collapse:collapse;
+  border:none;
+  font-family:"Century","serif";
+}
+
+td.hPayItem {
+  background: #4BACC6;
+  border:solid #78C0D4 1.0pt;
+  padding:0mm 5.4pt 0mm 5.4pt;
+  text-align:center;
+  color:white;
+}
+
+td.payItem {
+  background: #D2EAF1;
+  border: solid #78C0D4 1.0pt;
+  padding: 0mm 5.4pt 0mm 5.4pt;
+  text-align: left;
+  color: black;
+}
+
+td.fPayItem {
+  background: white;
+  border: solid #78C0D4 1.0pt;
+  padding: 0mm 5.4pt 0mm 5.4pt;
+  text-align: center;
+  color: black;
+}
+
+td.itemrbn {
+  border-right: none;
+}
+
+div.lhtitle {
+  background: #483D8B;
+  border: 0px solid;
+  padding: 0.5em;
+  margin: 1em 0;
+  font-weight: bold;
+  color: white;
+}
+
+td.rititletopBank {
+  background-color: #ffeebb;
+  border-color: #cc9999;
+  border-width: 1px;
+  border-style: solid;
+  width: 660px;
+  padding: 5px;
+  margin: 0px;
+}
+
+th.rititle2 {
+  background-color: #ffeebb;
+  border-color: #cc9999;
+  border-width: 1px;
+  border-style: solid;
+  padding: 5px;
+  margin: 0px;
+}
+
+td.rivalue2 {
+  border-color: #aa9999;
+  border-width: 0 1 1 1;
+  border-style: solid;
+  padding: 5px;
+  margin: 0px;
+  word-break: break-all;
+}
+
+ul.flinkmenu {
+  list-style: none;
+  margin: 0;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+ul.flinkmenu > li {
+  margin-bottom: 7px;
+}

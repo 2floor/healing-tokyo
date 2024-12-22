@@ -1,0 +1,36 @@
+tour_relation_exception_id Nothing
+tour_relation_id Nothing
+tour_id Nothing
+exception_date Nothing
+max_number_of_people Nothing
+del_flg Nothing
+create_at Nothing
+update_at Nothing
+'tour_relation_exception_id',
+'tour_relation_id',
+'tour_id',
+'exception_date',
+'max_number_of_people',
+'del_flg',
+'create_at',
+'update_at',
+
+
+$post['tour_relation_exception_id'],
+$post['tour_relation_id'],
+$post['tour_id'],
+$post['exception_date'],
+$post['max_number_of_people'],
+$post['del_flg'],
+$post['create_at'],
+$post['update_at'],
+
+'tour_relation_exception_id' => $reult_detail['tour_relation_exception_id'],
+'tour_relation_id' => $reult_detail['tour_relation_id'],
+'tour_id' => $reult_detail['tour_id'],
+'exception_date' => $reult_detail['exception_date'],
+'max_number_of_people' => $reult_detail['max_number_of_people'],
+'del_flg' => $reult_detail['del_flg'],
+'create_at' => $reult_detail['create_at'],
+'update_at' => $reult_detail['update_at'],
+

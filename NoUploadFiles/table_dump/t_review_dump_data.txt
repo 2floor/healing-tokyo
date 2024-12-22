@@ -1,0 +1,64 @@
+review_id Nothing
+member_id Nothing
+nicname Nothing
+store_id Nothing
+tour_id Nothing
+reservation_id Nothing
+confirmation_flg Nothing
+auth_flg Nothing
+review_point Nothing
+comment Nothing
+reply Nothing
+del_flg Nothing
+public_flg Nothing
+create_at Nothing
+update_at Nothing
+'review_id',
+'member_id',
+'nicname',
+'store_id',
+'tour_id',
+'reservation_id',
+'confirmation_flg',
+'auth_flg',
+'review_point',
+'comment',
+'reply',
+'del_flg',
+'public_flg',
+'create_at',
+'update_at',
+
+
+$post['review_id'],
+$post['member_id'],
+$post['nicname'],
+$post['store_id'],
+$post['tour_id'],
+$post['reservation_id'],
+$post['confirmation_flg'],
+$post['auth_flg'],
+$post['review_point'],
+$post['comment'],
+$post['reply'],
+$post['del_flg'],
+$post['public_flg'],
+$post['create_at'],
+$post['update_at'],
+
+'review_id' => $reult_detail['review_id'],
+'member_id' => $reult_detail['member_id'],
+'nicname' => $reult_detail['nicname'],
+'store_id' => $reult_detail['store_id'],
+'tour_id' => $reult_detail['tour_id'],
+'reservation_id' => $reult_detail['reservation_id'],
+'confirmation_flg' => $reult_detail['confirmation_flg'],
+'auth_flg' => $reult_detail['auth_flg'],
+'review_point' => $reult_detail['review_point'],
+'comment' => $reult_detail['comment'],
+'reply' => $reult_detail['reply'],
+'del_flg' => $reult_detail['del_flg'],
+'public_flg' => $reult_detail['public_flg'],
+'create_at' => $reult_detail['create_at'],
+'update_at' => $reult_detail['update_at'],
+
