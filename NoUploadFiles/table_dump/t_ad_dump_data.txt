@@ -1,0 +1,44 @@
+ad_id Nothing
+dear_id Nothing
+hierarchy Nothing
+ad Nothing
+ad_eng Nothing
+thumbnail Nothing
+del_flg Nothing
+public_flg Nothing
+create_at Nothing
+update_at Nothing
+'ad_id',
+'dear_id',
+'hierarchy',
+'ad',
+'ad_eng',
+'thumbnail',
+'del_flg',
+'public_flg',
+'create_at',
+'update_at',
+
+
+$post['ad_id'],
+$post['dear_id'],
+$post['hierarchy'],
+$post['ad'],
+$post['ad_eng'],
+$post['thumbnail'],
+$post['del_flg'],
+$post['public_flg'],
+$post['create_at'],
+$post['update_at'],
+
+'ad_id' => $reult_detail['ad_id'],
+'dear_id' => $reult_detail['dear_id'],
+'hierarchy' => $reult_detail['hierarchy'],
+'ad' => $reult_detail['ad'],
+'ad_eng' => $reult_detail['ad_eng'],
+'thumbnail' => $reult_detail['thumbnail'],
+'del_flg' => $reult_detail['del_flg'],
+'public_flg' => $reult_detail['public_flg'],
+'create_at' => $reult_detail['create_at'],
+'update_at' => $reult_detail['update_at'],
+

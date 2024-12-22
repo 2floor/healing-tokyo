@@ -1,0 +1,112 @@
+tour_id Nothing
+store_basic_id Nothing
+title Nothing
+d_title Nothing
+d_detail Nothing
+femeal_only Nothing
+category Nothing
+area Nothing
+adult_fee Nothing
+children_fee Nothing
+children_age_limit Nothing
+tranvel Nothing
+youtube Nothing
+img Nothing
+schedule Nothing
+meeting_place Nothing
+note Nothing
+note_agreement_flg Nothing
+inclusion Nothing
+what_to_bring Nothing
+duration Nothing
+payment_way Nothing
+remarks Nothing
+del_flg Nothing
+public_flg Nothing
+create_at Nothing
+update_at Nothing
+'tour_id',
+'store_basic_id',
+'title',
+'d_title',
+'d_detail',
+'femeal_only',
+'category',
+'area',
+'adult_fee',
+'children_fee',
+'children_age_limit',
+'tranvel',
+'youtube',
+'img',
+'schedule',
+'meeting_place',
+'note',
+'note_agreement_flg',
+'inclusion',
+'what_to_bring',
+'duration',
+'payment_way',
+'remarks',
+'del_flg',
+'public_flg',
+'create_at',
+'update_at',
+
+
+$post['tour_id'],
+$post['store_basic_id'],
+$post['title'],
+$post['d_title'],
+$post['d_detail'],
+$post['femeal_only'],
+$post['category'],
+$post['area'],
+$post['adult_fee'],
+$post['children_fee'],
+$post['children_age_limit'],
+$post['tranvel'],
+$post['youtube'],
+$post['img'],
+$post['schedule'],
+$post['meeting_place'],
+$post['note'],
+$post['note_agreement_flg'],
+$post['inclusion'],
+$post['what_to_bring'],
+$post['duration'],
+$post['payment_way'],
+$post['remarks'],
+$post['del_flg'],
+$post['public_flg'],
+$post['create_at'],
+$post['update_at'],
+
+'tour_id' => $reult_detail['tour_id'],
+'store_basic_id' => $reult_detail['store_basic_id'],
+'title' => $reult_detail['title'],
+'d_title' => $reult_detail['d_title'],
+'d_detail' => $reult_detail['d_detail'],
+'femeal_only' => $reult_detail['femeal_only'],
+'category' => $reult_detail['category'],
+'area' => $reult_detail['area'],
+'adult_fee' => $reult_detail['adult_fee'],
+'children_fee' => $reult_detail['children_fee'],
+'children_age_limit' => $reult_detail['children_age_limit'],
+'tranvel' => $reult_detail['tranvel'],
+'youtube' => $reult_detail['youtube'],
+'img' => $reult_detail['img'],
+'schedule' => $reult_detail['schedule'],
+'meeting_place' => $reult_detail['meeting_place'],
+'note' => $reult_detail['note'],
+'note_agreement_flg' => $reult_detail['note_agreement_flg'],
+'inclusion' => $reult_detail['inclusion'],
+'what_to_bring' => $reult_detail['what_to_bring'],
+'duration' => $reult_detail['duration'],
+'payment_way' => $reult_detail['payment_way'],
+'remarks' => $reult_detail['remarks'],
+'del_flg' => $reult_detail['del_flg'],
+'public_flg' => $reult_detail['public_flg'],
+'create_at' => $reult_detail['create_at'],
+'update_at' => $reult_detail['update_at'],
+

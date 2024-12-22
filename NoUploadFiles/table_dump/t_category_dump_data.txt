@@ -1,0 +1,44 @@
+category_id Nothing
+dear_id Nothing
+hierarchy Nothing
+category Nothing
+category_eng Nothing
+thumbnail Nothing
+del_flg Nothing
+public_flg Nothing
+create_at Nothing
+update_at Nothing
+'category_id',
+'dear_id',
+'hierarchy',
+'category',
+'category_eng',
+'thumbnail',
+'del_flg',
+'public_flg',
+'create_at',
+'update_at',
+
+
+$post['category_id'],
+$post['dear_id'],
+$post['hierarchy'],
+$post['category'],
+$post['category_eng'],
+$post['thumbnail'],
+$post['del_flg'],
+$post['public_flg'],
+$post['create_at'],
+$post['update_at'],
+
+'category_id' => $reult_detail['category_id'],
+'dear_id' => $reult_detail['dear_id'],
+'hierarchy' => $reult_detail['hierarchy'],
+'category' => $reult_detail['category'],
+'category_eng' => $reult_detail['category_eng'],
+'thumbnail' => $reult_detail['thumbnail'],
+'del_flg' => $reult_detail['del_flg'],
+'public_flg' => $reult_detail['public_flg'],
+'create_at' => $reult_detail['create_at'],
+'update_at' => $reult_detail['update_at'],
+

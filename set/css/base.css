@@ -1,0 +1,273 @@
+@charset "UTF-8";
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem;
+}
+
+
+/* 変数定義 */
+
+:root {
+    --col-space: 10px;
+    --base-margin: 10px;
+    --color-green: rgba(4, 120, 127, 1);
+}
+
+.contentWrap {
+    /*max-width: 1800px;*/
+    max-width: 1400px;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.contentWrap.narrow {
+    max-width: 1400px;
+}
+
+.contentWrap.narrower {
+    max-width: 1200px;
+}
+
+.contentWrap.narrow span{
+    font-size: 18px;
+}
+
+
+
+.col2Wrap,
+.col3Wrap,
+.col4Wrap,
+.col5Wrap,
+.colFreeWrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 calc(var(--col-space) * -1);
+    flex-wrap: wrap;
+}
+
+.colFreeWrap {
+    flex-wrap: nowrap;
+}
+
+.col2Wrap .col,
+.col3Wrap .col,
+.col4Wrap .col,
+.col5Wrap .col,
+.colFreeWrap .col {
+    margin: 0 var(--col-space);
+    padding-bottom: 3%;
+}
+
+.col2Wrap .col {
+    flex-basis: calc(50% - (var(--col-space) * 2));
+}
+
+.col3Wrap .col {
+    flex-basis: calc(33.33% - (var(--col-space) * 2));
+}
+
+.col4Wrap .col {
+    flex-basis: calc(25% - (var(--col-space) * 2));
+}
+
+.col5Wrap .col {
+    flex-basis: calc(20% - (var(--col-space) * 2));
+}
+
+.colFreeWrap .col {
+    flex-grow: 1;
+}
+
+.colFreeWrap .col.s75 {
+    flex-basis: 75%;
+}
+
+.colFreeWrap .col.s70 {
+    flex-basis: 70%;
+}
+
+.colFreeWrap .col.s50 {
+    flex-basis: 50%;
+}
+
+.colFreeWrap .col.s30 {
+    flex-basis: 30%;
+}
+
+.colFreeWrap .col.s25 {
+    flex-basis: 25%;
+}
+
+.col2Wrap.al-center,
+.col3Wrap.al-center,
+.col4Wrap.al-center,
+.col5Wrap.al-center,
+.colFreeWrap.al-center {
+    align-items: center;
+}
+
+.col2Wrap.al-stretch,
+.col3Wrap.al-stretch,
+.col4Wrap.al-stretch,
+.col5Wrap.al-stretch,
+.colFreeWrap.al-stretch {
+    align-items: stretch;
+}
+
+.mb10 {
+    margin-bottom: calc(var(--base-margin) * 1);
+}
+
+.mb20 {
+    margin-bottom: calc(var(--base-margin) * 2);
+}
+
+.mb30 {
+    margin-bottom: calc(var(--base-margin) * 3);
+}
+
+.mb40 {
+    margin-bottom: calc(var(--base-margin) * 4);
+}
+
+.mb50 {
+    margin-bottom: calc(var(--base-margin) * 5);
+}
+
+.mb60 {
+    margin-bottom: calc(var(--base-margin) * 6);
+}
+
+.mb70 {
+    margin-bottom: calc(var(--base-margin) * 7);
+}
+
+.mb80 {
+    margin-bottom: calc(var(--base-margin) * 8);
+}
+
+.mb90 {
+    margin-bottom: calc(var(--base-margin) * 9);
+}
+
+.mb100 {
+    margin-bottom: calc(var(--base-margin) * 10);
+}
+
+.mb110 {
+    margin-bottom: calc(var(--base-margin) * 11);
+}
+
+.mb120 {
+    margin-bottom: calc(var(--base-margin) * 12);
+}
+
+.mb130 {
+    margin-bottom: calc(var(--base-margin) * 13);
+}
+
+.mb140 {
+    margin-bottom: calc(var(--base-margin) * 14);
+}
+
+.mb150 {
+    margin-bottom: calc(var(--base-margin) * 15);
+}
+
+@media screen and (max-width: 1240px) {}
+
+@media screen and (max-width: 991px) {
+
+	:root{
+		--base-margin: 5px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.contentWrap.narrow {
+	    max-width: 100%;
+	}
+
+    .col2Wrap .col,
+    .col3Wrap .col,
+    .col4Wrap .col,
+    .col5Wrap .col,
+    .col {
+        flex-basis: 100%;
+    }
+    .spFlexWrap {
+        flex-wrap: wrap;
+    }
+
+	.colFreeWrap {
+	    display: inline;
+	}
+
+	.mb10 {
+	    margin-bottom: calc(var(--base-margin) * 1);
+	}
+
+	.mb20 {
+	    margin-bottom: 40px;
+	}
+
+	.mb30 {
+	    margin-bottom: calc(var(--base-margin) * 3);
+	}
+
+	.mb40 {
+	    margin-bottom: calc(var(--base-margin) * 4);
+	}
+
+	.mb50 {
+	    margin-bottom: calc(var(--base-margin) * 5);
+	}
+
+	.mb60 {
+	    margin-bottom: calc(var(--base-margin) * 6);
+	}
+
+	.mb70 {
+	    margin-bottom: calc(var(--base-margin) * 7);
+	}
+
+	.mb80 {
+	    margin-bottom: calc(var(--base-margin) * 8);
+	}
+
+	.mb90 {
+	    margin-bottom: calc(var(--base-margin) * 9);
+	}
+
+	.mb100 {
+	    margin-bottom: calc(var(--base-margin) * 10);
+	}
+
+	.mb110 {
+	    margin-bottom: calc(var(--base-margin) * 11);
+	}
+
+	.mb120 {
+	    margin-bottom: calc(var(--base-margin) * 12);
+	}
+
+	.mb130 {
+	    margin-bottom: calc(var(--base-margin) * 13);
+	}
+
+	.mb140 {
+	    margin-bottom: calc(var(--base-margin) * 14);
+	}
+
+	.mb150 {
+	    margin-bottom: calc(var(--base-margin) * 15);
+	}
+}
+
+@media screen and (max-width: 500px) {}

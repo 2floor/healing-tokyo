@@ -1,0 +1,1565 @@
+@charset "utf-8";
+
+
+
+/* base property
+================================================== */
+.w80 { width: 80px; }
+.w112 { width: 112px; }
+.w147 { width: 147px; }
+.w132 { width: 132px; }
+.w157 { width: 157px; }
+.w160 { width: 160px; }
+.w200 { width: 200px; }
+.w212 { width: 212px; }
+.w220 { width: 220px; }
+.w324 { width: 324px; }
+.w320 { width: 320px; }
+.w334 { width: 334px; }
+.w345 { width: 345px; }
+.w658 { width :658px; }
+.w765 { width :765px; }
+
+
+.h18 { height: 18px; }
+.h90 { height: 90px; }
+.h105 { height: 105px; }
+.h186 { height: 186px; }
+.h195 { height: 195px; }
+
+.mT2 { margin-top: 2px;}
+.mT3 { margin-top: 3px;}
+.mT8 { margin-top: 8px;}
+.mT25 { margin-top: 25px;}
+
+.mR20 { margin-right: 20px; }
+
+.mL15 { margin-left: 15px; }
+.mL20 { margin-left: 20px; }
+.mL30 { margin-left: 30px; }
+.mL45 { margin-left: 45px; }
+.mL60 { margin-left: 60px; }
+
+
+.mB10 { margin-bottom: 10px;}
+
+.pT7 { padding-top: 7px; }
+
+.pB10 { padding-bottom: 10px; }
+
+.lh26px { line-height: 26px; }
+
+.bgcH2blc { background-color: #f7f2e7;}
+
+.bdtH2blc {	border-top: #b7b7b7 1px dashed; }
+.bdbH2blc { border-bottom: #b7b7b7 1px dashed; }
+.bdbH2blcDot { border-bottom: #b7b7b7 1px dotted; }
+
+@media (max-width: 767px) {
+	.w200 { width: 100%; }
+}
+
+/* sprite */
+
+/* MainClm */
+.tryPremiumMain{
+	float: left;
+	width: 758px;
+	margin: 10px 0 0;
+}
+
+/*  17_8800円ディナー特集
+================================================== */
+
+.taC { text-align: center;}
+
+.schPnlList {
+	width: 658px;
+	line-height: 1.2;
+}
+.schPnlList li {
+	float:left;
+	margin: 5px 17px 0 0;
+}
+
+.trySinSchGenre{
+	padding: 0 0 10px 10px;
+}
+
+.tryCmnSchPnl .trySinSchGenre li{
+	float: left;
+	width: 167px;
+	height: 30px;
+	margin: 10px 10px 0 0;
+	padding: 0 0 0 10px;
+	background-color: #E8DFCB;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+.tryCmnSchPnl .trySinSchGenre li label{
+	float: left;
+	width: 167px;
+	height: 30px;
+	background-color: #e8dfcb;
+	font-weight: bold;
+	line-height: 30px;
+}
+.tryDinIchiLine{
+	margin: 25px 0 0 0;
+	padding: 10px;
+	border: 1px solid #bdbfd4;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.tryDinIchiLine .ttl {
+	font-weight: bold;
+	font-size: 13px;
+	color:#0e1242;
+	letter-spacing:0.15em;
+}
+
+.tryDinIchiLine span{
+	margin: 0 15px 0 0;
+	vertical-align: baseline;
+	font-family: "Sawarabi Mincho","ヒラギノ明朝 ProN W3",'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック','MS PGothic','メイリオ',Meiryo,sans-serif;
+}
+
+.tryDinIchiLine span:first-child{
+	margin-right: 5px;
+}
+
+.tryDinIchiSort{
+	padding: 0 0 0 10px;
+	margin: 10px 0 0 0;
+}
+
+.tryDinIchiSort dt, .tryDinIchiSort dd, .tryDinIchiSort ul, .tryDinIchiSort li{
+	float: left;
+}
+
+.tryDinIchiSort li{
+	padding: 5px 5px 5px 10px;
+	margin:0 5px 0 0;
+}
+
+.tryDinIchiSort li.sortOn{
+	font-weight: bold;
+}
+
+.tryDinIchiSort li a{
+}
+
+.tryDinIchiSort dt{
+	padding: 5px 0 0 0;
+	margin:0 5px 0 0;
+}
+
+.tryDinIchiCnt {
+  font-weight: bold;
+}
+
+.tryDinIchiCnt .no{
+	font-size: 200%;
+	color: #0e1243;
+}
+
+.tryDinIchiCnt .suffix {
+	font-size: 134%;
+}
+
+.tryDinIchiPage{
+	margin: 10px 0 0 0;
+}
+
+.tryDinIchiPage p, .tryDinIchiPage ol, .tryDinIchiPage li{
+	float: left;
+}
+
+.tryDinIchiPage a{
+	padding: 3px 5px;
+}
+
+.tryDinIchiPage li{
+	margin: 0 3px 0 0;
+}
+
+.tryDinIchiPage li span{
+	margin: 0 0 0 3px;
+	color: #bdbfd4;
+}
+
+.tryDinIchiPage li.pageOn a{
+  font-weight: bold;
+	text-decoration: none;
+}
+
+.tryDinIchiPage p{
+	margin: 0 20px 0 0;
+	padding: 2px 0 0 0;
+	color:#0e1242;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.tryDinIchiTit{
+	padding: 8px;
+	background-color: #e3d3af;
+	position: relative;
+}
+
+.tryDinIchiTit h3{
+	width: 428px;
+	font-size: 117%;
+	font-weight: bold;
+}
+
+.tryDinIchiTit h3 img{
+	margin: 0 0 0 8px;
+	vertical-align: middle;
+}
+
+/*住所、最寄駅追加　20160722*/
+.accessData{
+	padding:5px 0 10px 0;
+}
+
+.accessData dl{
+	padding:5px 0px 0 0px;
+	font-size:12px;
+	line-height:1.5;
+	color:#262626;
+	letter-spacing:0.1em;
+}
+
+.accessData dt{
+	float:left;
+}
+
+.tryDinIchiWrp{
+	border:#e3d3af 1px solid;
+}
+
+.tryDinIchiObj{
+	padding: 10px;
+}
+
+.tryDinIchiObjImg{
+	float: left;
+	width: 186px;;
+}
+
+.tryDinIchiObjImg img{
+	margin: 0 0 10px 0;
+	display: block;
+}
+
+.tryDinIchiObjInf{
+	float: right;
+	width: 500px;
+}
+
+.tryDinIchiObjInf dl{
+	float: left;
+	width: 342px;
+	padding: 7px 10px 10px 10px;
+	background-color: #f7f2e2;
+}
+
+.tryDinIchiObjInf dt{
+	font-weight: bold;
+}
+
+.tryDinIchiObjInf dt span{
+	margin:0 0 0 10px;
+}
+
+.tryDinIchiObjInf dd ul{
+	font-size: 84%;
+}
+
+.tryDinIchiObjInf dd li{
+	float: left;
+	margin: 10px 10px 0 0;
+}
+
+.tryDinIchiObjInf dd ul span{
+	margin: 0 5px;
+}
+
+.tryDinIchiObjInf .point{
+	float: left;
+	width: 343px;
+	padding: 7px 10px 10px 10px;
+	background-color: #f7f2e2;
+	font-weight: bold;
+}
+.tryDinIchiObjInf .point span{
+	margin-left: 10px;
+}
+.tryDinIchiPlnInf .price{
+	float: right;
+	margin: 10px 10px 0 8px;
+}
+.tryDinIchiPlnInf .price span{
+	margin-left: 8px;
+	font-weight: bold;
+	font-size: 117%;
+}
+
+.tryDinIchiTitArea {
+	float:right;
+	width: 312px;
+	text-align: right;
+}
+
+.tryDinIchiPlnTit{
+	padding: 9px 0 8px 10px;
+	background-color: #ad9853;
+	color:#ffffff;
+}
+
+.tryDinIchiPlnTit p{
+	float: left;
+	width: 348px;
+	font-weight: bold;
+	line-height: 1.2 !important;
+	vertical-align: top;
+}
+
+.tryDinIchiPlnTit ul{
+	float: right;
+	width: 164px;
+}
+
+.tryDinIchiPlnTit li{
+	float: right;
+	width: 73px;
+	margin: 0 8px 0 0;
+	line-height: 1.2;
+	text-align: center;
+	vertical-align: top;
+}
+
+.tryDinIchiPlnInf .InfL{
+	float: left;
+	width: 363px;
+}
+
+.tryDinIchiPlnInf .InfLTit{
+	padding: 10px 10px 0 0;
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+.tryDinIchiPlnInf .InfLTit img{
+	margin: 0 0 0 8px;
+	vertical-align: middle;
+}
+
+.tryDinIchiPlnInf ul{
+	float: right;
+	width: 164px;
+}
+
+.tryDinIchiPlnInf li{
+	float: right;
+	width: 90px;
+	margin: 10px 0 0 0;
+	text-align: center;
+}
+
+.tryDinIchiPlnInf li span{
+	font-weight: bold;
+	font-size: 117%;
+}
+
+.tryDinIchiPlnInf .InLInfo{
+	padding: 10px;
+	margin: 10px 0 0 0;
+	background-color: #f7f2e2;
+}
+.tryDinIchiPlnInf .InLInfoAtt{
+	font-size:10px;
+}
+
+.InfLIcon{
+	float: left;
+	margin: 0 0 5px 0;
+}
+
+.InfLIcon img{
+	margin-right: 5px;
+}
+.InfLIconSalon {
+	float: left;
+	margin: 0 0 5px 0;
+}
+
+.InfLIconSalon img{
+	margin-right: 5px;
+	margin-left: 15px;
+}
+.tryDinIchiOthers{
+	margin: 10px 0;
+}
+
+.tryDinIchiOthers a{
+    height: 14px;
+    padding-left: 8px;
+}
+
+.tryDinIchiObjInf p{
+	line-height: 1.5;
+}
+
+.tryGourmetHistoryPreWrap {
+	position:relative;
+	padding: 10px 28px;
+	background: #F7F2E7;
+}
+.tryGourmetHistoryPre {
+	width:603px;
+}
+.tryGourmetHistoryPre a.tryGourmetHistoryPrePrev {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.tryGourmetHistoryPre a.tryGourmetHistoryPreNext {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.tryGourmetHistoryPre li {
+	float: left;
+	width:251px;
+	height: 51px;
+	padding-left:10px;
+	border-left: 1px #B7B7B7 dotted;
+}
+.tryGourmetHistoryPre li:first-child {
+	padding-left:11px;
+	border-left: none;
+}
+.tryGourmetHistoryPre li .leftCol {
+	float: left;
+	width: 50px;
+}
+.tryGourmetHistoryPre li .rightCol {
+	float: left;
+	width: 182px;
+	padding-left: 10px;
+	line-height: 1.5;
+}
+@media (max-width: 767px) {
+	.tryDinIchiPlnTit p{
+		float: left;
+		width: 100%;
+		font-weight: bold;
+		line-height: 1.2 !important;
+		vertical-align: top;
+	}
+}
+
+/*  ?_ビューティ検索結果
+================================================== */
+
+.beautyResult div,
+.beautyResult dl,
+.beautyResult dd,
+.beautyResult dt{
+	line-height: 20px;
+	padding: 5px 0;
+}
+.beautyResult dt{
+	width: 65px;
+}
+.beautyResult label {
+	margin: 0 0 0 17px;
+	white-space: nowrap;
+}
+.w340{
+	width: 340px;
+}
+.tryDinIchiObjInfResultHead{
+	margin-bottom: 0;
+}
+.tryDinIchiObjInfResultHead dl{
+	float: none;
+}
+.tryDinIchiObjInfResultHead p{
+	float: none;
+	line-height: 1.4;
+}
+.tryDinIchiObjInfResultHead dt{
+	background: #f7f2e2;
+	padding: 5px 10px;
+}
+.tryDinIchiObjInfResultHead dt span{
+	font-weight: bold;
+	margin: 0 5px;
+}
+.tryDinIchiObjInfResultHead dd{
+	margin: 8px 10px 0;
+	padding-bottom:8px;
+}
+.tryBeautyResultSearchAction{
+	width: 758px;
+	border-top: #b7b7b7 1px dotted;
+	background-color: #f7f2e7;
+	padding: 10px 0 5px;
+}
+
+.btnDinSch {
+	padding: 20px 0 10px 0;
+	background-color: #F7F2E7;
+	text-align: center;
+}
+
+.btnDinSchRe {
+	padding:10px 0;
+	border-top: 1px dotted #B7B7B7;
+	border-bottom: 1px dotted #B7B7B7;
+	text-align: center;
+}
+
+.btnDinSchReResult {
+	display: block;
+	margin-left: 160px;
+	margin-top: 8px;
+	margin-right: 10px;
+}
+.btnDinSchResult {
+	display: block;
+}
+.tryDinIchiObjResult {
+	padding: 0 10px 10px;
+}
+.tryDinIchiObjImgResult {
+	float: left;
+    width: 230px;
+	margin-right: 11px;
+    border: 1px solid #ededed;
+	text-align: center;
+}
+.tryDinIchiObjImgResult .line {
+    border-bottom: 1px solid #ededed;
+}
+.tryDinIchiPlnTitResult {
+	margin-top: 10px;
+	padding: 9px 10px 10px;
+	background-color: #eee4cf;
+}
+.tryDinIchiPlnTitResult p {
+	float: left;
+	width: 100px;
+	font-weight: bold;
+	line-height: 1.2;
+}
+.tryDinIchiPlnTitResult ul {
+	float: right;
+	width: 164px;
+}
+.tryDinIchiPlnTitResult li {
+	float: left;
+	margin: 0 0 0 20px;
+	line-height: 1.2;
+	vertical-align: top;
+}
+/*
+.tryDinIchiPlnInfResult .InfLTit {
+	padding: 0 10px 0 10px;
+	font-weight: bold;
+	line-height: 1.5;
+}
+.tryDinIchiPlnInfResult .InfL {
+	float: left;
+	width: 323px;
+}
+.tryDinIchiPlnInfResult .InLInfo {
+	padding: 5px 10px;
+	margin: 10px 0;
+	background-color: #f7f2e2;
+}
+.tryDinIchiPlnInfReserve .InfLIcon {
+	float: left;
+	width: 156px;
+}
+.tryDinIchiPlnInfResult ul {
+	float: left;
+	width: 164px;
+}
+.tryDinIchiPlnInfReserve{
+	width: 483px;
+	float: right;
+}
+.tryDinIchiPlnInfReserve ul {
+	float: right;
+	width: 326px;
+}
+.tryDinIchiPlnInfReserve li {
+	margin: 0 0 0 8px;
+}
+.tryDinIchiPlnInfResultPrice li{
+	margin: 0 0 0 5px;
+	float: left;
+	width: 76px;
+}
+.tryDinIchiPlnInfResult li span {
+	font-weight: bold;
+	font-size: 117%;
+}
+.tryDinIchiPlnInfResult .InfLTit img{
+	margin: 0 0 0 8px;
+	vertical-align: middle;
+}
+*/
+.bdn{
+	border: none;
+}
+.beautyResult dt.mL30{
+	width: 50px;
+}
+*:first-child+html .tryDinIchiObjInfResult{
+	zoom:1;
+}
+
+/*  検索パネル
+================================================== */
+.tryCmnSchPnl, .tryCmnSchKodawari{
+	background-color: #f7f2e7;
+}
+.tryCmnSchPnl dl{
+	width: 1040px;
+	height: 28px;
+	margin: 0 10px;
+	padding: 3px 0 10px 0;
+	line-height: 38px;
+}
+.tryCmnSchPnl dl.wDlpnl{
+	height: 100%;
+	padding-bottom: 7px;
+}
+.tryCmnSchPnl dt, .tryCmnSchPnl dd{
+	float: left;
+}
+
+.tryCmnSchPnl dt{
+	width: 65px;
+	margin-right: 15px;
+	font-weight: bold;
+}
+
+.tryCmnSchPnl dt.wLong {
+	width: 120px;
+}
+.tryCmnSchPnl dt.wLong2 {
+	width: 100px;
+}
+.tryPremiumMain .tryCmnSchPnl dl.noHeight {
+width: 738px;
+height: auto;
+margin: 0 10px;
+padding: 3px 0 10px 0;
+line-height: 38px;
+}
+.tryCmnSchPnl dl dd .colFlt {
+width: 650px;
+line-height: 25px;
+}
+.tryCmnSchPnl dl dd .colFlt li {
+float: left;
+margin-right: 10px;
+}
+.tryCmnSchPnl input, .tryCmnSchKodawari input{
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.tryCmnSchPnl dd span img{
+	vertical-align: middle;
+}
+.tryCmnSchKodawari{
+/* 	display:none; */
+	padding: 0 0 6px 0;
+}
+
+.tryCmnSchKodawari dt{
+	padding: 8px 13px;
+	font-weight: bold;
+	background-color: #f0e7d3;
+}
+.tryCmnSchKodawari dd{
+	padding:2px 0 10px 20px;
+}
+.tryCmnSchKodawari li{
+	float: left;
+	margin:8px 17px 0 0;
+	*white-space: nowrap;
+}
+
+/*  30_18800円の２食付き高級貸し切り温泉ステイ予約
+================================================== */
+.tryDinIchiObjInf .rateSimple {
+	float: left;
+	width: 273px;
+	padding: 7px 10px 10px 10px;
+	background-color: #f7f2e2;
+	font-weight: bold;
+}
+.tryDinIchiObjInf .rateSimple span {
+	margin-left: 10px;
+}
+
+
+/*  ホテル検索結果
+================================================== */
+.tryDinIchiOthersTravel{
+	margin:20px 0 0;
+	font-size:14px;
+	font-weight:bold;
+	}
+
+.tryDinIchiOthersTravel a{
+    height: 14px;
+    padding-left: 8px;
+}
+
+.tryDinIchiPlnTitTravel{
+	margin:6px 0 0;
+	padding: 9px 0 8px 10px;
+	background-color: #eee4cf;
+	}
+
+.tryDinIchiPlnTitTravel p{
+	float: left;
+	width: 348px;
+	font-weight: bold;
+	line-height: 1.2 !important;
+	vertical-align: top;
+}
+
+.tryDinIchiPlnTitTravel ul{
+	float: right;
+	width: 164px;
+}
+
+.tryDinIchiPlnTitTravel li{
+	float: right;
+	width: 73px;
+	margin: 0 8px 0 0;
+	line-height: 1.2;
+	text-align: center;
+	vertical-align: top;
+}
+
+.travelProductAttention{
+	text-align:right;
+	color:#8b7a68;
+	line-height: 1.2;
+	padding:3px 0;
+	}
+
+/*0501design2から追加*/
+
+/*▼ビューティ店舗カセット*/
+.tryBeautyPlnTit {
+	padding: 9px 0 8px 10px;
+	margin: 20px 0 0 0;
+	background-color: #eee4cf;
+}
+
+.tryBeautyPlnTit p {
+	float: left;
+	width: 267px;
+	font-weight: bold;
+	line-height: 1.2 !important;
+}
+
+.tryBeautyPlnTit ul,
+.tryBeautyPlnTitWid ul,
+.tryBeautyPlnInf ul {
+	float: right;
+}
+
+.tryBeautyPlnTit li {
+	float: left;
+	width: 73px;
+	margin: 0 8px 0 0;
+	text-align: center;
+	line-height: 1.2;
+}
+
+.tryBeautyPlnInf .InfL {
+	float: left;
+	width: 280px;
+}
+
+
+.tryBeautyPlnInf .InfL_Fujinka {
+	float: left;
+	width: auto;
+}
+
+.tryBeautyPlnInf .InfLTit {
+	padding: 10px 0 0 0;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+.tryBeautyPlnInf .InfLTit img {
+	margin: 0 0 0 8px;
+	vertical-align: middle;
+}
+
+.tryBeautyPlnInf li {
+	float: left;
+	width: 80px;
+	margin: 10px 0 0;
+	text-align: center;
+}
+
+.tryBeautyPlnInf li span {
+	font-weight: bold;
+	font-size: 117%;
+}
+
+.tryBeautyPlnInf .InLInfo {
+	padding: 10px;
+	margin: 10px 0 0 0;
+	background-color: #F7F2E2;
+}
+/* 効果の目安
+--------------- */
+.effectChart {
+	padding: 5px 5px 1px;
+	margin: 10px 15px 0;
+	background-color: #F7F2E2;
+}
+.effectChart dl {
+	padding: 0;
+ float: none;
+	width: 462px;
+	font-size: 11px;
+	}
+.effectChart dt {
+	padding: 0 0 0 5px;
+ margin-top: -2px;
+	width: 75px;
+ display: table-cell;
+	vertical-align: text-top;
+	}
+.effectChart dd {
+ display: table-cell;
+	}
+.effectChart dd span {
+	padding: 0 4px;
+	margin : 0 5px 5px 0;
+	height: 16px;
+	line-height: 18px;
+	display: inline-block;
+	background-color: #C09F85;
+	color: #FFF;
+}
+/* 特典
+--------------- */
+.tryBeautyPlnInf .tokuten {
+	padding: 0;
+	margin: 10px 15px 0;
+	width: 502px;
+	float: none;
+	background: none;
+	font-size: 11px;
+}
+.tryBeautyPlnInf .tokuten dt {
+ float: left;
+	clear: left;
+	padding: 0 2px;
+	margin-top: -2px;
+ border: #fd598f 1px solid;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	color: #fd598f;
+}
+.tryBeautyPlnInf .tokuten dd {
+	margin-left: 40px;
+}
+/*▲ビューティ店舗カセット*/
+/*▼ネイル、まつげ店舗カセット*/
+
+.tryBeautyObjWid {
+	padding: 0 10px 10px;
+}
+
+.tryBeautyPlnTitWid {
+	padding: 9px 0 8px 10px;
+	background-color: #eee4cf;
+}
+
+.tryBeautyPlnTitWid p {
+	float: left;
+	width: 267px;
+	font-weight: bold;
+	line-height: 1.2 !important;
+}
+
+.tryBeautyPlnTitWid li {
+	float: left;
+	width: 73px;
+	margin: 0 8px 0 0;
+	text-align: center;
+	line-height: 1.2;
+}
+
+.tryBeautyPlnWrap {
+	padding: 10px 0;
+	border-bottom: 1px dotted #B7B7B7;
+}
+
+.tryBeautyObjInf {
+	float: right;
+	width: 493px;
+}
+.tryBeautyPlnInfWid {
+}
+
+.tryBeautyPlnInfWid ul {
+	float: right;
+	width: 245px;
+}
+
+.btyCstBt {
+	float: right;
+	width: 326px;
+}
+
+.btyCstBt li {
+	margin: 0 0 0 8px;
+}
+
+.tryBeautyPlnInfWid .InfL {
+	float: left;
+	width: 248px;
+}
+
+.tryBeautyPlnInfWid .InfLTit {
+	padding: 10px 10px 0 0;
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+.tryBeautyPlnInfWid .InfLTit img {
+	margin: 0 0 0 8px;
+	vertical-align: middle;
+}
+
+.tryBeautyPlnInfWid li {
+	float: right;
+	width: 80px;
+	margin: 10px 0 0 0;
+	text-align: center;
+}
+
+.tryBeautyPlnInfWid li span {
+	font-weight: bold;
+	font-size: 117%;
+}
+
+.tryBeautyPlnInfWid .InLInfo {
+	padding: 10px;
+	margin: 10px 0 0 0;
+	background-color: #f7f2e2;
+}
+
+/*追記2014.12　ネイルプラン検索
+--------------------------------- */
+.searchNailPlan {}
+.searchNailPlan dl {
+float: left;
+width: 342px;
+}
+.searchNailPlan .tryBeautyPlnTitWid {
+ padding: 9px 0 8px 0px;
+ background: none;
+	border-bottom: 1px dotted #B7B7B7;
+}
+
+/*▲ネイル、まつげ店舗カセット*/
+
+/*▼美容クリニックアイコン*/
+.btyWryIcon {	padding-top: 10px;}
+
+.btyWryIcon img {	margin-right: 3px;}
+
+/* 効果の目安
+--------------- */
+dl.bcEffectChart {
+	padding: 0;
+	margin: 25px 0 10px 10px;
+ background: none;
+	width: 520px;
+	font-size: 11px;
+	line-height: 1;
+}
+dl.bcEffectChart dt {
+	width: 60px;
+	display: table-cell;
+}
+dl.bcEffectChart dd {
+	width: 460px;
+	display: table-cell;
+}
+dl.bcEffectChart p {
+	float: left;
+	width: 225px;
+}
+dl.bcEffectChart p.even {
+ padding-left: 10px;
+}
+dl.bcEffectChart dd span {
+ width: 61px;
+ display: inline-block;
+}
+dl.bcEffectChart dd img  { margin-right: 2px;}
+/*▲美容クリニックアイコン*/
+
+
+/* beauty系検索結果の日付・条件から探すに関しての追記 */
+
+.w675{
+	width:675px;
+	line-height:24px;
+}
+.w675 label{
+	white-space:nowrap;
+}
+
+.spCmnIcon{
+	width:166px;
+	float: right;
+}
+.spCmnIcon img{
+	margin-right: 3px;
+	padding-bottom:5px;
+}
+/*.spCmnIcon img:last-child{
+	padding-bottom:0;
+}*/
+
+/*---------------------------------------------------------------------
+検索結果0件パターン
+--------------------------------------------------------------------- */
+
+/* margin */
+.m30 { margin: 30px;!important}
+.mT20 { margin-top: 20px;!important}
+
+
+/* font-size */
+.fp14 { font-size: 117%;!important}
+
+
+
+.tryLimitedPlan{
+}
+.tryLimitedPlan .txt{
+	float:left;
+	width:599px;
+	height:258px;
+	border-left:1px solid #ffd6e9;
+	border-top:1px solid #ffd6e9;
+	border-bottom:1px solid #ffd6e9;
+}
+.tryLimitedPlan .lead{
+	width:460px;
+	margin-left:70px;s
+	text-align:center;
+}
+.tryLimitedPlan .ph{
+	float:right;
+	width:380px;
+}
+.tryLimitedPlan .searchBtn{
+	margin-left:120px;
+	padding-bottom:10px;
+}
+.tryLimitedPlan .searchBtn li{
+	float:left;
+	margin-right:20px;
+}
+.searchAreaTtl{
+	margin:10px 0 8px 111px;
+}
+
+.searchAreaList{margin-left:111px;}
+
+.searchAreaList li{
+	float:left;
+	margin-right:18px;
+}
+.reasonLink {
+    display: block;
+    float: right;
+    height: 30px;
+    margin-right: 20px;
+    padding: 15px 0 0 22px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.Hover {
+    text-decoration: none;
+}
+.reasonContents {
+    position: absolute;
+    left: 840px;
+    top: 270px;
+    width: 290px;
+    height: 170px;
+    padding: 35px 35px 0 20px;
+    z-index: 100;
+}
+.reasonContents dd {
+    margin-top: 5px;
+    line-height: 25px;
+}
+
+/*---------------------------------------------------------------------
+検索結果一覧下部の遷移促進バナー
+--------------------------------------------------------------------- */
+.tryBtmBanner{
+	clear: both;
+    margin: 0 auto;
+    width: 758px;
+	padding-top:20px;
+}
+.tryBtmBanner2clm{
+	float:left;
+	width:370px;
+	margin:0 18px 18px 0;
+}
+.tryBtmBanner2clmL{
+	float:left;
+	width:370px;
+	margin:0 0 18px 0;
+}
+
+/*---------------------------------------------------------------------
+レストラン商品改定
+--------------------------------------------------------------------- */
+.mB20{margin-bottom: 20px!important;}
+.tryPremiumMain.Main1column{
+	float: none;
+	width: 1080px;
+	margin: 20px auto 0;
+	/*word-break: break-all;*/
+	word-wrap: break-word;
+}
+.tryDinIchiCntBox{
+	padding-bottom: 5px;
+	border-bottom: 2px solid #0e1242;
+}
+.tryDinIchiObjInf dd ul.planprice {
+	font-size: 12px;
+	font-weight: bold;
+}
+.tryDinIchiObjInf dd ul.planprice li{
+	line-height: 17px;
+}
+.tryDinIchiObjInf dd ul.planprice li img{
+	margin-right: 3px;
+}
+.tryDinIchiObjInf .freeIconList {
+	overflow: hidden;
+}
+.tryDinIchiObjInf .freeIconList li {
+	color: #fff;
+	display: inline;
+	float: left;
+	font-size: 11px;
+	line-height: 14px;
+	margin-right: 6px;
+	padding: 2px 3px;
+	background-color: #aa7e38;
+}
+.tryDinIchiObjInf .planDetailIcon li {
+	border: 1px solid #fe3c7b;
+	color: #fe3c7b;
+	display: block;
+	float: left;
+	font-size: 11px;
+	line-height: 12px;
+	padding: 2px 3px;
+	margin-right: 6px;
+}
+.tryDinIchiPlnInf .priceL{
+	width: 164px;
+}
+@media (max-width: 767px) {
+	.tryPremiumMain.Main1column{
+		float: none;
+		width: 100%;
+		margin: 20px auto 0;
+		/*word-break: break-all;*/
+		word-wrap: break-word;
+	}
+}
+
+/*---------------------------------------------------------------------
+レストラン検索結果修正14/12/5
+--------------------------------------------------------------------- */
+.tryDinIchiWrp.RestaurantSh h3{
+	width:100%;
+}
+/*---------------------------------------------------------------------
+ヘアカタログ一覧表示2016/01
+--------------------------------------------------------------------- */
+.catalogListArea {
+	letter-spacing: -0.5em;
+}
+.catalogListArea a:hover {
+	opacity:0.7;
+	filter: alpha(opacity=70);
+	-ms-filter: "alpha( opacity=70 )";
+}
+.catalogListArea a {
+	text-decoration: none;
+}
+.catalogListItemBox,
+.catalogListItemBox2 {
+	display: inline-block;
+	margin:18px 18px 0 0;
+	letter-spacing: 0;
+	line-height: 1.4;
+	width: 174px;
+	vertical-align: top;
+}
+.catalogListItemBox2 {
+	width: 240px;
+}
+.catalogListItemBox:nth-child(4n+1),
+.catalogListItemBox2:nth-child(3n+1)  {
+	margin-right: 0;
+}
+.catalogListItemBox .catalogListItemPh {
+	position: relative;
+	display: table-cell;
+	height: 230px;
+	border: 1px solid #e3d3af;
+	vertical-align: middle;
+}
+.catalogListItemBox2 .catalogListItemPh {
+	position: relative;
+	text-align: center;
+}
+.catalogListItemBox .catalogListItemPh a {
+	display: block;
+	height: 230px;
+	width: 174px;
+	overflow: hidden;
+}
+.catalogListItemBox2 .catalogListItemPh2 a {
+	display: block;
+	width: 240px;
+}
+.catalogListItemBox img.catalogListPh {
+	width: 174px;
+}
+.catalogListItemBox2 img.catalogListPh {
+	width: auto;
+	height: 136px;
+}
+.catalogListItemPh img.catalogListIco {
+	position:absolute;
+	top: 5px;
+	left: 5px;
+	z-index: 100;
+}
+.catalogListItemBox .catalogListItemFavBtn {
+	margin-top: 10px;
+	text-align: center;
+}
+.catalogListItemBox2 .catalogListItemFavBtn {
+display: block;
+	margin-top: 10px;
+text-align: center;
+}
+.catalogListItemName {
+	padding: 7px 0;
+}
+.catalogListItemBox .catalogListItemShop a {
+	display: block;
+	padding: 7px 0;
+	border-top: 1px solid #e3d3af;
+}
+.catalogListItemBox2 .catalogListItemShop a {
+	display: block;
+	padding: 7px 0;
+	text-align: center;
+}
+
+/*---------------------------------------------------------------------
+ヘアカタログ・ネイルカタログ検索パネル追加2016/01
+--------------------------------------------------------------------- */
+.checkboxBgSetting {
+	line-height: 0;
+	width: 650px;
+	margin: 0 0 10px 0;
+}
+.addWidth {
+	width: 620px;
+}
+.checkboxBgSetting li {
+	float: left;
+	margin:13px 30px 0 0;
+}
+.checkboxBgSetting li label {
+	display: block;
+}
+.checkboxBgSetting li label:hover {
+	opacity:0.7;
+	filter: alpha(opacity=70);
+	-ms-filter: "alpha( opacity=70 )";
+}
+.tryCmnSchPnlItem2column {
+	background: #F7F2E7;
+	padding: 10px;
+}
+.tryCmnSchPnlItem2column dl {
+	float: left;
+	width: 340px;
+	display: table;
+}
+.tryCmnSchPnlItem2column dl dt,
+.tryCmnSchPnlItem2column dl dd {
+	display: table-cell;
+	vertical-align: middle;
+}
+.tryCmnSchPnlItem2column dl dt {
+	font-weight: bold;
+	width: 65px;
+}
+.tryCmnSchPnlItem2column dl dt.wLong2 {
+	font-weight: bold;
+	width: 100px;
+}
+.tryCmnSchPnlItem2column dl dd {
+font-size: 0;
+	padding-left: 14px;
+}
+.btnDinSchEqually {
+	background: #f7f2e7;
+	padding: 14px 0;
+	text-align: center;
+}
+.tryCmnPopUpInner2 {
+	overflow: auto;
+	margin: 10px 10px 0;
+	padding: 10px;
+	background: #FFF;
+}
+.tryCmnPopUpInner2 input {
+    margin-right: 5px;
+    vertical-align:bottom;
+}
+.tryCmnPopUpSelect1column {
+	display: table;
+	width:100%;
+	border-bottom: dotted 1px #ae835d;
+}
+.tryCmnPopUpSelect1column:last-child {
+	border-bottom: none;
+}
+.tryCmnPopUpSelect1column dt,
+.tryCmnPopUpSelect2column dt {
+	display: table-cell;
+	vertical-align: middle;
+	background: #E5DCC5;
+	width: 7em;
+	padding:5px 5px 5px 10px;
+	line-height: 1.5;
+}
+.tryCmnPopUpSelect1column dd,
+.tryCmnPopUpSelect2column dd {
+	display: table-cell;
+	vertical-align: top;
+	padding:2px 0 12px 0;
+	line-height: 0.8;
+}
+.tryCmnPopUpSelect1column li,
+.tryCmnPopUpSelect2column li {
+    float: left;
+    letter-spacing: -1px;
+    margin: 10px 0 0 10px;
+}
+.tryCmnPopUpSelect2column {
+	display: table;
+	float: left;
+	width:50%;
+	border-bottom: dotted 1px #ae835d;
+}
+.tryCmnPopUpSelect1column li label,
+.tryCmnPopUpSelect2column li label {
+	line-height:1.25;
+	background:#FFF;
+}
+.tryCmnPopUpSelect1column li input,
+.tryCmnPopUpSelect2column li input {
+    float: left;
+    letter-spacing: -1px;
+    padding: 5px 0 0 0;
+	background:#FFF;
+}
+.tryCmnPopUpSelect1column li label span,
+.tryCmnPopUpSelect2column li label span {
+	display:block;
+	padding-left: 18px;
+}
+ul.selectListWidth140 li { width: 140px; }
+ul.selectListWidth140 li:nth-child(5) { clear: left; }
+ul.selectListWidth125 li { width: 125px; }
+ul.selectListWidth125 li:nth-child(6) { clear: left; }
+ul.selectListWidth80 li { width: 80px; }
+
+ul.selectListWidth140 li input,
+ul.selectListWidth125 li input,
+ul.selectListWidth80 li input {
+	vertical-align:-2px;
+}
+/* faceForm  */
+.faceForm li {
+	position: relative;
+}
+.faceForm li input {
+	vertical-align:-2px;
+}
+.faceForm li::after{
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	right: 0;
+	left: 0;
+	margin: auto;
+	display:block;
+	background-color: #E5DCC5;
+}
+.faceForm li::after {
+	top: 18px;
+}
+.faceForm li.eggShape::after{
+	width: 14px;
+	height: 18px;
+	-webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+	border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+	top: -1px;
+	left: 30px;
+}
+.faceForm li.roundShape::after{
+	width: 18px;
+	height: 18px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	top: -1px;
+	left: 30px;
+}
+.faceForm li.surfaceLength::after{
+	width: 12px;
+	height: 20px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	top: -3px;
+	left: 30px;
+}
+.faceForm li.invertedTriangle::after{
+	border-top: 16px solid #E5DCC5;
+	width: 0;
+	height: 0;
+	background-color: transparent;
+	border-right: 9px solid transparent;
+	border-left: 9px solid transparent;
+	top: -1px;
+	left: 45px;
+}
+.faceForm li.baseShape::before{
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	right: 0;
+	left: 0;
+	margin: auto;
+	display:block;
+	background-color: #E5DCC5;
+	top: -5px;
+	left: 50px;
+	width: 18px;
+	height: 10px;
+}
+.faceForm li.baseShape::after{
+	width: 0;
+	height: 0;
+	background-color: #fe3c7b;
+	background-color: transparent;
+	border-right: 9px solid transparent;
+	border-left: 9px solid transparent;
+	top: 9px;
+	left: 50px;
+	border-top: 8px solid #E5DCC5;
+}
+
+/*---------------------------------------------------------------------
+トラベル検索 2016/10
+--------------------------------------------------------------------- */
+/* ▼▼アイコンをCSS化 20161027*/
+.ico_trvl_svc{
+	display: inline-block;
+	background: #9b6e4a;
+	color: #fff;
+	font-size: 10px;
+	padding: 2px 3px;
+	vertical-align: middle;
+	margin-left: 5px;
+	font-weight: normal;
+}
+/* //▲▲アイコンをCSS化 20161027*/
+#searchTravel .tryDinIchiPlnTitTravel{
+	padding-right: 10px;
+}
+#searchTravel .tryDinIchiPlnTitTravel p{
+	padding-right: 10px;
+	width: 150px;
+}
+#searchTravel .tryDinIchiPlnTitTravel ul{
+	width: 350px;
+	text-align: right;
+}
+#searchTravel .tryDinIchiPlnTitTravel li {
+	float: none;
+	display: inline-block;
+	width: auto;
+	margin-right: 5px;
+}
+#searchTravel .tryDinIchiPlnTitTravel li:last-child{
+	margin-right: 0;
+}
+#searchTravel .tryDinIchiPlnInf li{
+	width: 150px;
+	font-size: 12px;
+	text-align: right;
+}
+#searchTravel .tryDinIchiPlnInf li span{
+	padding-left: 5px;
+	font-size: 12px;
+	color: #ff387a;
+	vertical-align: baseline;
+}
+#searchTravel .tryDinIchiPlnInf li span em{
+	font-size: 16px;
+	vertical-align: baseline;
+}
+/* レストラン汎用バナー用 */
+
+.headerBannarForPR p{
+	text-align:center;
+}

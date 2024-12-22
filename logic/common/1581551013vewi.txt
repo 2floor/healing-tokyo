@@ -1,0 +1,4 @@
+mErrMsg:ダミー取引では利用できないカード番号です。ベリトランス指定のカード番号をご利用ください。
+mStatus:failure
+vResultCode:AC09000000000000
+orderId:000145-000173

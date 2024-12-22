@@ -1,0 +1,36 @@
+eng_offer_id Nothing
+store_basic_id Nothing
+tour_id Nothing
+status Nothing
+remarks Nothing
+del_flg Nothing
+create_at Nothing
+update_at Nothing
+'eng_offer_id',
+'store_basic_id',
+'tour_id',
+'status',
+'remarks',
+'del_flg',
+'create_at',
+'update_at',
+
+
+$post['eng_offer_id'],
+$post['store_basic_id'],
+$post['tour_id'],
+$post['status'],
+$post['remarks'],
+$post['del_flg'],
+$post['create_at'],
+$post['update_at'],
+
+'eng_offer_id' => $reult_detail['eng_offer_id'],
+'store_basic_id' => $reult_detail['store_basic_id'],
+'tour_id' => $reult_detail['tour_id'],
+'status' => $reult_detail['status'],
+'remarks' => $reult_detail['remarks'],
+'del_flg' => $reult_detail['del_flg'],
+'create_at' => $reult_detail['create_at'],
+'update_at' => $reult_detail['update_at'],
+

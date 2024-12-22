@@ -1,0 +1,4 @@
+SetEnvIf Request_URI ".*" Ngx_Cache_NoCacheMode=off
+SetEnvIf Request_URI ".*" Ngx_Cache_AllCacheMode
+SetEnvIf Request_URI ".*" AllowCountry
+SetEnvIf Request_URI ".*" AllowRestApi

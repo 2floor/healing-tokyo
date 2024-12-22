@@ -1,0 +1,15 @@
+{
+    "name": "vendor_name/package_name",
+    "description": "description_text",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "author's name",
+            "email": "email@example.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "3.7.22",
+        "phpunit/phpunit-mock-objects": "1.2.3"
+    }
+}

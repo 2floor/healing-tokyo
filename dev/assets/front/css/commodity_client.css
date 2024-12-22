@@ -1,0 +1,475 @@
+@charset "utf-8";
+
+/* ====================================================
+base
+====================================================== */
+div, h3, h4, h5, p, ol, ul, li, dl, dt, dd{ margin:0; padding:0; }
+img                            { vertical-align: bottom; border:none;}
+li                             { list-style: none;}
+
+/* 明朝
+-------------------------- */
+#commodityClientArea .mincho{
+	font-family: 'Noto Serif', 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro', 'ＭＳ Ｐ明朝','MS PMincho',serif;
+}
+
+
+
+/* ====================================================
+19周年用
+====================================================== */
+
+.tryPremiumMain.Main1column{
+	background:#fff;
+	padding:10px;
+}
+
+.tryCmnContents{
+	/*background:#f0e9d9;*/
+	padding-bottom:20px;
+}
+/* pfdinner */
+.pfdinnerMain{
+	width:980px;
+	height:300px;
+	position:relative;
+}
+
+.pfdinnerMain .txtBox{
+	width:435px;
+	padding-top:20px;
+}
+
+.pfdinnerMain .txtBox h2{
+	font-family: 'Noto Serif', 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro', 'ＭＳ Ｐ明朝','MS PMincho',serif;
+	font-size:44px;
+	text-align:center;
+	padding:30px 0 17px;
+	letter-spacing:0.08em;
+	color:#ef5666;
+}
+
+.pfdinnerMain .txtBox h2 span{
+	font-size:40px;
+}
+
+.pfdinnerMain .txtBox p{
+	font-size:16px;
+	width:350px;
+	color:#000;
+	text-align:center;
+	margin:8px 0 0 43px;
+	line-height:1.8em;
+
+}
+
+
+.pfdinnerMain .icon{
+	width:82px;
+	height:82px;
+	position:absolute;
+	top:20px;
+	left:395px;
+
+}
+@media (max-width: 767px) {
+	.tryPremiumMain.Main1column {
+	    background: #fff;
+	    padding: 10px 0px;
+	    box-sizing: border-box;
+	}
+}
+
+/* dining */
+.diningMain{
+	width:980px;
+	height:300px;
+	position:relative;
+}
+
+.diningMain .txtBox{
+	width:435px;
+	padding-top:20px;
+}
+
+.diningMain .txtBox h2{
+	font-family: 'Noto Serif', 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro', 'ＭＳ Ｐ明朝','MS PMincho',serif;
+	font-size:34px;
+	text-align:center;
+	padding:40px 0 31px;
+	letter-spacing:0.08em;
+	color:#ff7900;
+}
+
+.diningMain .txtBox h2 span{
+	font-size:26px;
+}
+
+.diningMain .txtBox p{
+	font-size:16px;
+	width:350px;
+	color:#000;
+	text-align:center;
+	margin:8px 0 0 43px;
+	line-height:1.8em;
+
+}
+
+.diningMain .icon{
+	width:82px;
+	height:82px;
+	position:absolute;
+	top:20px;
+	left:395px;
+
+}
+
+
+/* lunch */
+.lunchMain{
+	width:980px;
+	height:300px;
+	position:relative;
+}
+
+.lunchMain .txtBox{
+	width:435px;
+	padding-top:20px;
+}
+
+.lunchMain .txtBox h2{
+	font-family: 'Noto Serif', 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro', 'ＭＳ Ｐ明朝','MS PMincho',serif;
+	font-size:44px;
+	text-align:center;
+	padding:30px 0 16px;
+	letter-spacing:0.08em;
+	color:#84ba2d;
+}
+
+.lunchMain .txtBox h2 span{
+	font-size:34px;
+}
+
+.lunchMain .txtBox p{
+	font-size:16px;
+	width:350px;
+	color:#000;
+	text-align:center;
+	margin:8px 0 0 43px;
+	line-height:1.8em;
+
+}
+
+.lunchMain .icon{
+	width:82px;
+	height:82px;
+	position:absolute;
+	top:20px;
+	left:395px;
+
+}
+
+
+
+/* ====================================================
+　contents
+====================================================== */
+.contents{
+	background:#fff;
+	padding:30px;
+}
+.contents h4{
+	text-align:center;
+	color:#50381c;
+	font-family: 'Noto Serif', 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro', 'ＭＳ Ｐ明朝','MS PMincho',serif;
+	font-size:22px;
+	width:750px;
+	margin:0 auto 24px;
+
+}
+/* ====================================================
+　contents.point
+====================================================== */
+.pointBox {
+	padding-top:30px;
+	background:#f0e9d9;
+}
+.pointBox li{
+	background-position:left top;
+	background-repeat:no-repeat;
+	background-color:#fff;
+	width:293px;
+	float:left;
+	padding: 40px 0 0;
+	margin-left:20px;
+	box-shadow:rgba(0, 0, 0, 0.188235) 1px 2px 6px 1px;
+	-webkit-box-shadow:rgba(0, 0, 0, 0.188235) 1px 2px 6px 1px;
+	-moz-box-shadow:rgba(0, 0, 0, 0.188235) 1px 2px 6px 1px;
+}
+.pointBox li:after{
+	content:" ";
+	display: block;
+	width: 293px;
+	height: 6px;
+}
+.pointBox li h5{
+	color: #aa7402;
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-family: 'Noto Serif', 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro', 'ＭＳ Ｐ明朝','MS PMincho',serif;
+	letter-spacing:-0.02em;
+}
+.pointBox li dl{
+	padding:10px 15px 15px;
+	color:#000!important;
+}
+.pointBox li dt{
+	float:left;
+	padding-right:12px;
+}
+
+.pointBox li dd{
+	font-size:13px;
+	margin-top:10px;
+}
+
+/* ====================================================
+#commodityClientArea　19周年
+====================================================== */
+
+#commodityClientArea01{
+	width:926px;
+	padding:15px 27px 0;
+	color:#5c4730;
+	font-size:12px;
+	line-height:1.6;
+	clear:both;
+}
+
+/* .pickupTit
+-------------------------- */
+#commodityClientArea01 .pickupTit{
+	font-size:22px;
+	font-weight:bold;
+	text-align:center;
+	width:350px;
+	margin:0 auto 10px;
+}
+
+#commodityClientArea01 a img:hover{
+	opacity:0.7;
+	filter: alpha(opacity=70);
+	-ms-filter: "alpha( opacity=70 )";
+}
+/* .pickup
+-------------------------- */
+#commodityClientArea01 .pickup{
+	background-color:#FFFFFF;
+	border:2px solid #dcc799;
+}
+#commodityClientArea01 .pickup h3{
+	padding:5px 20px;
+	background-color:#dcc799;
+	font-size:16px;
+	font-weight:bold;
+}
+#commodityClientArea01 .pickup h3 span{
+	font-size:14px;
+}
+#commodityClientArea01 .pickup h3 a{
+	color:#50381c;
+}
+/* .inner
+-------------------------- */
+#commodityClientArea01 .pickup .inner{
+	padding:20px;
+}
+#commodityClientArea01 .pickup .ph{
+	float:left;
+}
+#commodityClientArea01 .pickup .text{
+	float:right;
+	width:382px;
+}
+#commodityClientArea01 .pickup .point{
+	padding:10px 10px 7px;
+}
+#commodityClientArea01 .pickup .point dt{
+	text-align:center;
+}
+#commodityClientArea01 .pickup .point li{
+	padding:6px 3px 5px 30px;
+	border-bottom:1px solid #dcc799;
+	font-size:16px;
+	font-weight:bold;
+}
+#commodityClientArea01 .pickup .plan{
+	padding:10px 0 0;
+	font-size:13px;
+	font-weight:bold;
+}
+#commodityClientArea01 .pickup .plan a{
+	color:#aa7402;
+}
+#commodityClientArea01 .pickup .price{
+	padding:9px 0;
+	text-align:right;
+}
+#commodityClientArea01 .pickup .price span{
+	font-size:14px;
+	font-weight:bold;
+}
+#commodityClientArea01 .pickup .vacancy{
+	float:right;
+	padding:25px 0 0;
+}
+#commodityClientArea01 .pickup .btn{
+	float:right;
+	margin-left:10px;
+}
+/* .lpoTit
+-------------------------- */
+#commodityClientArea01 .lpoTit{
+	padding:20px 0 0;
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+}
+
+
+/* ====================================================
+#commodityClientArea 通常
+====================================================== */
+
+
+#commodityClientArea{
+	width:926px;
+	padding:15px 27px 0;
+	color:#5c4730;
+	font-size:12px;
+	line-height:1.6;
+	clear:both;
+}
+#commodityClientArea a img:hover{
+	opacity:0.7;
+	filter: alpha(opacity=70);
+	-ms-filter: "alpha( opacity=70 )";
+}
+/* .pickupTit
+-------------------------- */
+#commodityClientArea .pickupTit{
+	display:inline-block;
+	padding:0 32px 10px 0;
+	font-size:16px;
+	font-weight:bold;
+}
+/* .pickup
+-------------------------- */
+#commodityClientArea .pickup{
+	background-color:#FFFFFF;
+	border:2px solid #dcc799;
+}
+#commodityClientArea .pickup h3{
+	padding:5px 20px;
+	background-color:#dcc799;
+	font-size:16px;
+	font-weight:bold;
+}
+#commodityClientArea .pickup h3 span{
+	font-size:14px;
+}
+#commodityClientArea .pickup h3 a{
+	color:#50381c;
+}
+/* .inner
+-------------------------- */
+#commodityClientArea .pickup .inner{
+	padding:20px;
+}
+#commodityClientArea .pickup .ph{
+	float:left;
+}
+#commodityClientArea .pickup .text{
+	float:right;
+	width:382px;
+}
+#commodityClientArea .pickup .point{
+	padding:10px 10px 7px;
+}
+#commodityClientArea .pickup .point dt{
+	text-align:center;
+}
+#commodityClientArea .pickup .point li{
+	padding:6px 3px 5px 30px;
+	border-bottom:1px solid #dcc799;
+	font-size:16px;
+	font-weight:bold;
+}
+#commodityClientArea .pickup .plan{
+	padding:10px 0 0;
+	font-size:13px;
+	font-weight:bold;
+}
+#commodityClientArea .pickup .plan a{
+	color:#aa7402;
+}
+#commodityClientArea .pickup .price{
+	padding:9px 0;
+	text-align:right;
+}
+#commodityClientArea .pickup .price span{
+	font-size:14px;
+	font-weight:bold;
+}
+#commodityClientArea .pickup .vacancy{
+	float:right;
+	padding:25px 0 0;
+}
+#commodityClientArea .pickup .btn{
+	float:right;
+	margin-left:10px;
+}
+/* .lpoTit
+-------------------------- */
+#commodityClientArea .lpoTit{
+	padding:20px 0 0;
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+}
+
+/* ====================================================
+サービスカラーの指定
+====================================================== */
+/* dinner
+-------------------------- */
+.dinner .vacancy a,
+.dinner .lpoTit span{
+	color:#8d0003;
+}
+/* pfdinner
+-------------------------- */
+.pfdinner .vacancy a,
+.pfdinner .lpoTit span{
+	color:#e82d41;
+}
+/* dining
+-------------------------- */
+.dining .vacancy a,
+.dining .lpoTit span{
+	color:#FA7600;
+}
+/* lunch
+-------------------------- */
+.lunch .vacancy a,
+.lunch .lpoTit span{
+	color:#538601;
+}
+/* buffet
+-------------------------- */
+.buffet .vacancy a,
+.buffet .lpoTit span{
+	color:#24b093;
+}

@@ -1,0 +1,40 @@
+news_id Nothing
+category Nothing
+title Nothing
+disp_date Nothing
+detail Nothing
+del_flg Nothing
+public_flg Nothing
+create_at Nothing
+update_at Nothing
+'news_id',
+'category',
+'title',
+'disp_date',
+'detail',
+'del_flg',
+'public_flg',
+'create_at',
+'update_at',
+
+
+$post['news_id'],
+$post['category'],
+$post['title'],
+$post['disp_date'],
+$post['detail'],
+$post['del_flg'],
+$post['public_flg'],
+$post['create_at'],
+$post['update_at'],
+
+'news_id' => $reult_detail['news_id'],
+'category' => $reult_detail['category'],
+'title' => $reult_detail['title'],
+'disp_date' => $reult_detail['disp_date'],
+'detail' => $reult_detail['detail'],
+'del_flg' => $reult_detail['del_flg'],
+'public_flg' => $reult_detail['public_flg'],
+'create_at' => $reult_detail['create_at'],
+'update_at' => $reult_detail['update_at'],
+

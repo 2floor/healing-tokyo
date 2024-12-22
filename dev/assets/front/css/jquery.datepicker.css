@@ -1,0 +1,41 @@
+
+.ui-datepicker, .ui-datepicker span, .ui-datepicker a {
+	font-size: 12px !important
+}
+
+select.ui-datepicker-year {
+	padding: 3px 0 !important;
+	width: 60px !important;
+	margin-right: 5px !important
+}
+
+select.ui-datepicker-month {
+	padding: 3px 0 !important;
+	width: 56px !important;
+	margin-left: 5px !important
+}
+
+.ui-button-icon-only .ui-button-text {
+	display: none !important
+}
+
+img.ui-datepicker-trigger {
+	cursor: pointer;
+	margin-left: 5px !important;
+	margin-bottom: 2px !important;
+    margin-bottom: 8px !important;
+    height: 18px;
+}
+
+
+tr td.ui-datepicker-week-end:first-child a {
+	background: none !important;
+	background-color: #fcc !important;
+	color: #f00 !important
+}
+
+tr td.ui-datepicker-week-end:last-child a {
+	background: none !important;
+	background-color: #ccf !important;
+	color: #00f !important
+}

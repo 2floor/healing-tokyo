@@ -1,0 +1,4 @@
+mErrMsg:処理が成功しました。
+mStatus:success
+vResultCode:A001000000000000
+orderId:1574611848-00000106
